@@ -15,6 +15,7 @@ import (
 
 	"image/jpeg"
 	_ "image/png"
+	_ "golang.org/x/image/bmp"
 
 	"../contants"
 	"github.com/gorilla/mux"
@@ -121,12 +122,14 @@ func GetImages(response http.ResponseWriter, request *http.Request) {
 			log.Fatal(err)
 		}
 		images = append(images, image)
+		image.Link, err = filepath.Abs("./assets/" + image.Name)
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
 	if err := rows.Err(); err != nil {
 		log.Fatal(err)
 	}
-
-	image.Link = "images/" + image.Name
 
 	json.NewEncoder(response).Encode(images)
 }

@@ -24,13 +24,13 @@ const (
 type Patient struct {
 	PatientID   int
 	DoctorID    int
+	Age					int
 	Height      float32
 	Weight      float32
 	FirstName   string
 	LastName    string
 	FathersName string
 	Diagnosis   string
-	Phone       string
 }
 
 func AddPatient(response http.ResponseWriter, request *http.Request) {
@@ -55,11 +55,11 @@ func AddPatient(response http.ResponseWriter, request *http.Request) {
 	defer db.Close()
 
 	sql := `
-	INSERT INTO patients (doctorID, height, weight, firstName, lastName, fathersName, diagnosis, phone)
+	INSERT INTO patients (doctorID, height, weight, firstName, lastName, fathersName, diagnosis, age)
 	VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
 	RETURNING patientID`
 
-	err = db.QueryRow(sql, patient.DoctorID, patient.Height, patient.Weight, patient.FirstName, patient.LastName, patient.FathersName, patient.Diagnosis, patient.Phone).Scan(&patientId)
+	err = db.QueryRow(sql, patient.DoctorID, patient.Height, patient.Weight, patient.FirstName, patient.LastName, patient.FathersName, patient.Diagnosis, patient.Age).Scan(&patientId)
 	if err != nil {
 		panic(err)
 	}
@@ -94,7 +94,7 @@ func GetPatients(response http.ResponseWriter, request *http.Request) {
 	}
 
 	for rows.Next() {
-		if err := rows.Scan(&patient.PatientID, &patient.DoctorID, &patient.FirstName, &patient.LastName, &patient.FathersName, &patient.Height, &patient.Weight, &patient.Diagnosis, &patient.Phone); err != nil {
+		if err := rows.Scan(&patient.PatientID, &patient.DoctorID, &patient.FirstName, &patient.LastName, &patient.FathersName, &patient.Height, &patient.Weight, &patient.Diagnosis, &patient.Age); err != nil {
 			log.Fatal(err)
 		}
 		patients = append(patients, patient)
@@ -157,9 +157,9 @@ func UpdatePatient(response http.ResponseWriter, request *http.Request) {
 
 	sqlStatement := `
 UPDATE patients
-SET doctorID = $2, height = $3, weight = $4, firstName = $5, lastName = $6, fathersName = $7, diagnosis = $8, phone = $9
+SET doctorID = $2, height = $3, weight = $4, firstName = $5, lastName = $6, fathersName = $7, diagnosis = $8, age = $9
 WHERE patientID = $1;`
-	_, err = db.Exec(sqlStatement, id, &patient.DoctorID, &patient.Height, &patient.Weight, &patient.FirstName, &patient.LastName, &patient.FathersName, &patient.Diagnosis, &patient.Phone)
+	_, err = db.Exec(sqlStatement, id, &patient.DoctorID, &patient.Height, &patient.Weight, &patient.FirstName, &patient.LastName, &patient.FathersName, &patient.Diagnosis, &patient.Age)
 	if err != nil {
 		panic(err)
 	}

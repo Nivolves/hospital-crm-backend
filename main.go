@@ -26,22 +26,18 @@ func StartServer() {
 			h.ServeHTTP(w, r)
 		}
 	}
-	http.Handle("/assets", changeHeaderThenServe(http.FileServer(http.Dir("./assets"))))
-	router.PathPrefix(STATIC_DIR).Handler(http.StripPrefix(STATIC_DIR, http.FileServer(http.Dir("."+STATIC_DIR))))
-	// var orig = http.StripPrefix(STATIC_DIR, http.FileServer(http.Dir("."+STATIC_DIR)))
-	// var wrapped = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-	// 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	// 	orig.ServeHTTP(w, r)
-	// })
+	router.PathPrefix(STATIC_DIR).Handler(http.StripPrefix(STATIC_DIR, changeHeaderThenServe(http.FileServer(http.Dir("."+STATIC_DIR)))))
 
 	router.HandleFunc("/image", api.AddImage).Methods("POST")
 	router.HandleFunc("/patient", api.AddPatient).Methods("POST")
+	router.HandleFunc("/analize", api.Analize).Methods("POST")
 	router.HandleFunc("/patients", api.GetPatients).Methods("GET")
 	router.HandleFunc("/images", api.GetImages).Methods("GET")
 	router.HandleFunc("/patient/{id}", api.DeletePatient).Methods("DELETE")
 	router.HandleFunc("/patient/{id}", api.UpdatePatient).Methods("PUT")
 	http.ListenAndServe(":"+os.Getenv("PORT"), handlers.CORS()(router))
 }
+
 
 func main() {
 	StartServer()
