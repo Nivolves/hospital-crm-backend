@@ -57,7 +57,8 @@ func (img *Image) createImage() string {
 
 func AddImage(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
-	response.Header().Set("content-type", "application/x-www-form-urlencoded")
+	response.Header().Set("content-type", "application/json")
+	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 
 	var image Image
@@ -97,7 +98,6 @@ func AddImage(response http.ResponseWriter, request *http.Request) {
 func GetImages(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
 	response.Header().Set("content-type", "application/json")
-	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
@@ -138,8 +138,7 @@ func GetImages(response http.ResponseWriter, request *http.Request) {
 
 func DeleteImage(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
-	response.Header().Set("content-type", "application/json")
-	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	response.Header().Set("content-type", "application/x-www-form-urlencoded")
 
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
