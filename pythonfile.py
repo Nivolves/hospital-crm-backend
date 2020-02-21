@@ -7,13 +7,8 @@ from scipy.stats import skew, kurtosis
 from datetime import timedelta
 import copy
 from math import log, pow, sqrt, sin, cos, atan
-from flask_cors import CORS, cross_origin
-from flask import Flask, redirect, url_for, request
-from functools import update_wrapper
 import json
 
-app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 def getPixelMatrix(filename):
