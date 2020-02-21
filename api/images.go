@@ -57,8 +57,7 @@ func (img *Image) createImage() string {
 
 func AddImage(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
-	response.Header().Set("content-type", "application/json")
-	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	response.Header().Set("content-type", "application/x-www-form-urlencoded")
 
 
 	var image Image
