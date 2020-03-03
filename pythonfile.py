@@ -243,7 +243,7 @@ def ballsModel():
 
 
 def getMeanSigns(type_sensor):
-    if type_sensor == 1:
+    if type_sensor == "linear":
         x1 = getX1(glcm=glcm)
         skew_1 = getSkew(glrlm[0])
         range_1 = getRange(glrlm[0])
@@ -254,7 +254,7 @@ def getMeanSigns(type_sensor):
                 ['range(1)', int(928 / (max(928, range_1) * 1.3) * 100),
                  int(range_1 / (max(928, range_1) * 1.3) * 100)]]  # размах частот градаций серого с длиной 1
 
-    elif type_sensor == 2:
+    elif type_sensor == "reinforced_linear":
         median = getMedian(normArr)
         Q5 = getQ5(normArr)
         Q95 = getQ95(normArr)
