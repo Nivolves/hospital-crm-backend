@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
@@ -13,13 +14,6 @@ import (
 	"../contants"
 )
 
-const (
-	host     = "46.101.116.184"
-	port     = 5432
-	user     = "nivolves"
-	password = "14881488"
-	dbname   = "hospital"
-)
 
 type Patient struct {
 	PatientID   int
@@ -72,6 +66,7 @@ func AddPatient(response http.ResponseWriter, request *http.Request) {
 func GetPatients(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
 	response.Header().Set("content-type", "application/json")
+	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
@@ -109,6 +104,7 @@ func GetPatients(response http.ResponseWriter, request *http.Request) {
 func DeletePatient(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
 	response.Header().Set("content-type", "application/json")
+	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
@@ -136,7 +132,8 @@ func DeletePatient(response http.ResponseWriter, request *http.Request) {
 func UpdatePatient(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
 	response.Header().Set("content-type", "application/json")
-
+	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
 		contants.Host, contants.Port, contants.User, contants.Password, contants.Dbname)
@@ -155,12 +152,20 @@ func UpdatePatient(response http.ResponseWriter, request *http.Request) {
 	params := mux.Vars(request)
 	id := params["id"]
 
+	patientID, err := strconv.Atoi(id)
+
+	patient.PatientID = patientID;
+
+
 	sqlStatement := `
 UPDATE patients
 SET doctorID = $2, height = $3, weight = $4, firstName = $5, lastName = $6, fathersName = $7, diagnosis = $8, age = $9
-WHERE patientID = $1;`
+WHERE patientID = $1
+RETURNING patientID;`
 	_, err = db.Exec(sqlStatement, id, &patient.DoctorID, &patient.Height, &patient.Weight, &patient.FirstName, &patient.LastName, &patient.FathersName, &patient.Diagnosis, &patient.Age)
 	if err != nil {
 		panic(err)
 	}
+
+	json.NewEncoder(response).Encode(patient)
 }

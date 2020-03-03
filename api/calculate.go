@@ -15,7 +15,7 @@ type AnalizeType struct {
 
 
 
-func Analize(response http.ResponseWriter, request *http.Request) {
+func Calculate(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Access-Control-Allow-Origin", "*")
 	response.Header().Set("content-type", "application/json")
 	response.Header().Set("Access-Control-Allow-Headers", "Content-Type")
@@ -25,11 +25,12 @@ func Analize(response http.ResponseWriter, request *http.Request) {
 	json.NewDecoder(request.Body).Decode(&analize)
 
 
-	cmd := exec.Command("python", "pythonfile.py", analize.Link, analize.Task, analize.Sensor)
+	cmd := exec.Command("python3", "pythonfile.py", analize.Link, analize.Task, analize.Sensor)
+
   stdout, err := cmd.StdoutPipe()
   if err != nil {
     panic(err)
-  }
+	}
 	
   err = cmd.Start()
   if err != nil {

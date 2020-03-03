@@ -1,21 +1,27 @@
 # coding=utf-8
 import numpy as np
 import pandas as pd
-from cv2 import cv2
-import sys
+import cv2
 from scipy.stats import skew, kurtosis
-from datetime import timedelta
 import copy
+import sys
 from math import log, pow, sqrt, sin, cos, atan
+import time
 import json
 
 
-
+# Матрица градаций серого
 def getPixelMatrix(filename):
     arr = cv2.imread(filename, 0)
-    return arr.astype(int)
+    arr = arr.astype(int)
+    a = []
+    for i in range(arr.shape[0]):
+        for j in range(arr.shape[1]):
+            a.append(arr[i][j])
+    return a
 
 
+# Нормировка матрицы
 def getNormArr(a):
     normArr = []
     for i in range(len(a) - 1):
@@ -27,11 +33,9 @@ def getNormArr(a):
     return normArr
 
 
+# Матрица сочетаний
 def getGLCM(arr):
-    a1 = []
-    for i in range(arr.shape[0]):
-        for j in range(arr.shape[1]):
-            a1.append(arr[i][j])
+    a1 = copy.deepcopy(arr)
     a2 = []
     for i in range(1, len(a1)):
         a2.append(a1[i])
@@ -47,23 +51,7 @@ def getGLCM(arr):
     return df.sort_values(by=['x'])
 
 
-def getNormGLCM(normArr):
-    a1 = copy.deepcopy(normArr)
-    a2 = []
-    for i in range(1, len(a1)):
-        a2.append(a1[i])
-    del a1[-1]
-    strA = []
-    for i in range(len(a1)):
-        strA.append(str(a1[i]) + str(a2[i]))
-    a3 = []
-    for i in range(len(strA)):
-        a3.append(strA.count(strA[i]))
-    df = pd.DataFrame({'x': a1, 'y': a2, 'z': a3})
-    df = df.drop_duplicates()
-    return df.sort_values(by=['x'])
-
-
+# Матрица длин градаций серого
 def getGLRLM(normArr):
     minArr = abs(min(normArr))
     for i in range(len(normArr)):
@@ -88,20 +76,20 @@ def getGLRLM(normArr):
     return pd.DataFrame(zArr)
 
 
-def getX1X2X3(df):
-    newList = []
-    a1 = df['x'].tolist()
-    a2 = df['y'].tolist()
-    a3 = df['z'].tolist()
-    fin_matrix = []
-    for i in range(len(a1)):
-        fin_matrix.append([a1[i], a2[i], a3[i]])
-    final_matrix = np.zeros((max(a1 + a2) + 1, max(a1 + a2) + 1), dtype=int)
-    for i in fin_matrix:
-        final_matrix[i[0]][i[1]] = i[2]
+# Первый признак матрицы GLCM
+def getX1(glcm):
+    a1 = glcm['x'].tolist()
+    a2 = glcm['y'].tolist()
+    a3 = glcm['z'].tolist()
     max_index = a3.index(max(a3))
-    result = int(a1[max_index]) * int(a2[max_index])
-    newList.append(result)  # первый признак (x1)
+    x1 = int(a1[max_index]) * int(a2[max_index])
+    return x1
+
+
+# Второй признак матрицы GLCM
+def getX2(glcm):
+    a1 = glcm['x'].tolist()
+    a3 = glcm['z'].tolist()
     norm_value = pd.Series(a3)
     norm_value = (norm_value / sum(norm_value) * 10000).tolist()
     tp = np.array(a1)
@@ -110,143 +98,204 @@ def getX1X2X3(df):
     for j in arr_index:
         result2_array.append(norm_value[j])
     try:
-        result2 = sum(result2_array) / len(result2_array)
+        x2 = sum(result2_array) / len(result2_array)
     except:
-        result2 = 0
-    newList.append(result2)  # второй признак (x2)
-    result3 = int(max(a1)) * int(max(a2))
-    newList.append(result3)  # третий признак (x3)
-    return newList
+        x2 = 0
+    return x2
 
 
+# Третий признак матрицы GLCM
+def getX3(glcm):
+    a1 = glcm['x'].tolist()
+    a2 = glcm['y'].tolist()
+    x3 = int(max(a1)) * int(max(a2))
+    return x3
+
+
+# Среднее значение
+def getMean(arr):
+    return np.mean(arr)
+
+
+# Медиана
+def getMedian(arr):
+    return np.median(arr)
+
+
+# Первый квартиль
+def getQ1(arr):
+    return np.percentile(arr, 25, interpolation='midpoint')
+
+
+# Третий квартиль
+def getQ3(arr):
+    return np.percentile(arr, 75, interpolation='midpoint')
+
+
+# Межквартильный размах
+def getIQR(arr):
+    return (getQ3(arr) - getQ1(arr))
+
+
+# Стандартное отклонение
+def getStd(arr):
+    return np.std(arr)
+
+
+# Ассиметрия
+def getSkew(arr):
+    return skew(arr)
+
+
+# Эксцесс
+def getKurtosis(arr):
+    return kurtosis(arr)
+
+
+# 5% квартиль
+def getQ5(arr):
+    return np.percentile(arr, 5, interpolation='midpoint')
+
+
+# 95% квартиль
+def getQ95(arr):
+    return np.percentile(arr, 95, interpolation='midpoint')
+
+
+# Размах
+def getRange(arr):
+    return (max(arr) - min(arr))
+
+
+# Разница между амплитудами мод длин 1 и 2
+def getDif12(glrlm):
+    glrlm = glrlm.div(len(arr))
+    glrlm = glrlm.multiply(100)
+    return (max(glrlm[0]) - max(glrlm[1]))
+
+
+# Разница между амплитудами мод длин 2 и 3
+def getDif23(glrlm):
+    glrlm = glrlm.div(len(arr))
+    glrlm = glrlm.multiply(100)
+    return (max(glrlm[1]) - max(glrlm[2]))
+
+
+# Разница между амплитудами мод длин 1 и 3
+def getDif13(glrlm):
+    glrlm = glrlm.div(len(arr))
+    glrlm = glrlm.multiply(100)
+    return (max(glrlm[0]) - max(glrlm[2]))
+
+
+# Модель для конвексного датчика
 def convexModel():
-    result = 10.9313 - 0.0000113586 * x3 * cos(skew2) - (10.2813 * atan(Q95_1)) / atan(mean1) - 0.00190833 * sqrt(
-        x1) * sin(dif13) + \
-        (0.00000191699 * x1) / sin(dif13) + 12.0079 / (x1 * log(kurtosis2)) + (0.0000000463565 * pow(Q3, 3)) / cos(
-        mean3) + \
-        (24.1914 * pow(std, 3)) / pow(Q95, 3) - (0.244841 * pow(x3, 1. / 3)) / sqrt(x1) - (
-        0.829612 * pow(Q95, 2)) / x3 - \
-        0.00418883 * pow(x3, 1. / 3) * cos(mean3) + (24337900 * sin(dif13)) / pow(x3, 2) + (
-        0.0000825577 * pow(Q95, 2)) / pow(kurtosis2, 1. / 3) - \
-        (14.62 * cos(skew2)) / sqrt(x3) - (361.806 * sin(dif13)) / x1norm + 814.946 * sin(dif13) / pow(Q95, 2) - \
-        331.19 / pow(x3, 5. / 6) - (3428.16 * sin(dif13)) / x3 + \
-        0.0000000396005 * pow(median, 2) * pow(std, 3)
+    rrange = getRange(normArr)
+    dif12 = getDif12(glrlm=glrlm)
+    x3 = getX3(glcm=glcm)
+    std = getStd(normArr)
+    x3_norm = getX3(normGLCM)
+    dif13 = getDif13(glrlm=glrlm)
+    IQR = getIQR(normArr)
+    Q95 = getQ95(normArr)
+    result = 12.7436 + (0.359819 * sqrt(rrange)) / log(dif12) + (0.00470603 * x3) / pow(std, 3) - \
+             4.07882e-19 * x3_norm * pow(x3, 3) + (566923000 * pow(std, 3)) / pow(x3, 3) - \
+             (3767.95 * x3_norm) / pow(x3, 2) - 0.255481 * sin(dif13) * cos(std) + \
+             (44.8881 * pow(IQR, 3)) / pow(Q95, 3) - (1.59326 * pow(std, 3)) / pow(Q95, 2) - \
+             (474.325 * sin(dif12)) / x3_norm - (14.2729 * atan(dif12)) / atan(dif13)
     return 2 if result > 0.5 else 1
 
 
+# Модель для линейного датчика
 def linearModel():
-    result = -0.476814 + (0.508205 * log(x1)) / log(std) - (8.8652 * log(x1)) / sqrt(x3) - (
-        7.02162 * pow(mean3, 1. / 3)) / sqrt(mean2) \
-        + (0.000211017 * sqrt(x1)) / cos(skew1) - 0.00594114 * sqrt(x3) * log(skew1) - 0.0148594 / (
-        pow(range2, 1. / 3) * cos(skew1)) \
-        + (4.52131 * pow(std3, 1. / 3)) / sqrt(mean2) - 7.05488 / (log(x3) * atan(skew1)) + (
-        5.84287 * atan(Q95_3)) / pow(range1, 1. / 3) + \
-        0.00424622 * sqrt(std2) * pow(range2, 1. / 3) - (1.17722 * sqrt(mean3)) / std + (
-        5.16211 * atan(dif23)) / pow(x1, 1. / 3) \
-        - (5.82559 * atan(std3)) / pow(Q95_1, 1. / 3) + 0.00285946 * pow(x3 * Q95_3, 1. / 3) + \
-        0.0203011 * pow(x1, 1. / 3) * atan(std3)
+    x1 = getX1(glcm=glcm)
+    x3_norm = getX3(normGLCM)
+    std = getStd(normArr)
+    skew_1 = getSkew(glrlm[0])
+    range_1 = getRange(glrlm[0])
+    Q3_2 = getQ3(glrlm[1])
+    result = -0.45995 + 0.000143428 * x1 - 0.0000151906 * x3_norm - 0.00236257 * std + 0.323126 * skew_1 + \
+             0.000071245 * range_1 + 0.0146191 * Q3_2
     return 2 if result > 0.5 else 1
 
 
-def clModel():
-    result = 0.378151 + 0.000000331558 * x1 * std1 + 0.000000219131 * x3 * std1 - 0.00000208405 * x3 * std2 + \
-        0.0000000881623 * x3 * range2 - 0.00470088 * std1 + \
-        0.0317531 * std2 + 0.00000109125 * std2 * range2
+# Модель для линейного датчика в усиленном режиме (яичко)
+def ballsModel():
+    x1 = getX1(glcm=glcm)
+    median = getMedian(normArr)
+    Q5 = getQ5(normArr)
+    Q95 = getQ95(normArr)
+    IQR_1 = getIQR(glrlm[0])
+    result = 1.33614 + 0.0000643571 * x1 + 0.477101 * median - 0.202878 * Q5 - 0.280842 * Q95 - 0.00119196 * IQR_1
     return 2 if result > 0.5 else 1
 
 
-def getTypeResult(type_sensor):
-    type_result = []
-    if firstRes == 1:
-        type_result.append("Линейная модель: норма") if type_sensor == 1 \
-            else type_result.append("Конвексная модель: норма")
-    else:
-        type_result.append("Линейная модель: патология") if type_sensor == 1 \
-            else type_result.append("Конвексная модель: патология")
-    type_result.append("Смешанная модель: норма") if secondRes == 1 \
-        else type_result.append("Смешанная модель: патология")
-    return type_result
+# def getTypeResult(type_sensor):
+#     type_result = []
+#     if res == 1:
+#             return "Печень в норме"
+#         type_result.append("Линейная модель: норма") if type_sensor == 1 \
+#             else type_result.append("Конвексная модель: норма")
+#     else:
+#         type_result.append("Линейная модель: патология") if type_sensor == 1 \
+#             else type_result.append("Конвексная модель: патология")
+#     return type_result
 
 
 def getMeanSigns(type_sensor):
-    return [[['cubert(mean(3))', '1.36', str(pow(mean3, 1. / 3))],
-             ['cubert(std(3))', '1.88', str(pow(std3, 1. / 3))],
-             ['arctg(Q95(3))', '1.519', str(atan(Q95_3))]],
-            [['std(2)', '28.65', str(std2),
-              'std(1)', '186', str(std1),
-              'range(2)', '80', str(range2)]]] \
-        if type_sensor == 1 else \
-        [[['x1', '5775', str(x1)],
-          ['sqrt(x1)', '76', str(sqrt(x1))],
-          ['ln(kurtosis(2)', '1.68', str(log(kurtosis2))]],
-         [['std(2)', '28.65', str(std2),
-           'std(1)', '186', str(std1),
-           'range(2)', '80', str(range2)]]]
+    if type_sensor == 1:
+        x1 = getX1(glcm=glcm)
+        skew_1 = getSkew(glrlm[0])
+        range_1 = getRange(glrlm[0])
 
+        return [['x1', int(1444 / (max(1444, x1) * 1.1) * 100), int(x1 / (max(1444, x1) * 1.10) * 100)],
+                ['skew(1)', int(2 / (max(2, skew_1) * 1.2) * 100), int(skew_1 / (max(2, skew_1) * 1.2) * 100)],
+                # ассиметрия частот градаций серого с длиной 1
+                ['range(1)', int(928 / (max(928, range_1) * 1.3) * 100),
+                 int(range_1 / (max(928, range_1) * 1.3) * 100)]]  # размах частот градаций серого с длиной 1
 
-def getProcentResult(type_sensor):
-    return ['Точность линейной модели: 83.1%', 'Точность смешанной модели: 80%'] if type_sensor == 1 \
-        else ['Точность конвексной модели: 80.3%', 'Точность смешанной модели: 80%']
+    elif type_sensor == 2:
+        median = getMedian(normArr)
+        Q5 = getQ5(normArr)
+        Q95 = getQ95(normArr)
+        return [['median', int(27 / (max(27, median) * 1.1) * 100), int(median / (max(27, median) * 1.10) * 100)],
+                # медиана градаций серого
+                ['Q5', int(27 / (max(27, Q5) * 1.2) * 100), int(Q5 / (max(27, Q5) * 1.2) * 100)],
+                # 5% квартиль градаций серого
+                ['Q95', int(33 / (max(33, Q95) * 1.3) * 100),
+                 int(Q95 / (max(33, Q95) * 1.3) * 100)]]  # 95% квартиль градаций серого
+    else:
+        x3 = getX3(glcm=glcm)
+        std = getStd(normArr)
+        IQR = getIQR(normArr)
+        return [['cube(std)', int(307 / (max(307, pow(std, 3)) * 1.1) * 100),
+                 int(pow(std, 3) / (max(307, pow(std, 3)) * 1.10) * 100)],
+                # медиана градаций серого
+                ['cube(IQR)', int(512 / (max(512, pow(IQR, 3)) * 1.2) * 100),
+                 int(pow(IQR, 3) / (max(512, pow(IQR, 3)) * 1.2) * 100)],
+                # 5% квартиль градаций серого
+                ['x3', int(18769 / (max(18769, x3) * 1.3) * 100),
+                 int(x3 / (max(18769, x3) * 1.3) * 100)]]  # 95% квартиль градаций серого
 
 
 def main(path, type_task, type_sensor):
-    global x1, x2, x3, x1norm, x2norm, x3norm, median, Q3, std, Q95, mean1, std1, skew1, Q95_1, range1, mean2, std2, \
-        skew2, kurtosis2, range2, mean3, std3, Q95_3, dif23, dif13, firstRes, secondRes
-
+    global arr, normArr, glcm, normGLCM, glrlm, res
     arr = getPixelMatrix(path)  # матрица градаций серого
-
-    a = []
-    for i in range(arr.shape[0]):
-        for j in range(arr.shape[1]):
-            a.append(arr[i][j])
-    normArr = getNormArr(a)  # нормализированная матрица
-
-    df = getGLCM(arr)  # GLCM
-    newList = getX1X2X3(df)
-    x1, x2, x3 = newList[0], newList[1], newList[2]
-
-    df = getNormGLCM(normArr)  # нормализированная GLCM
-    newList = getX1X2X3(df)
-    x1norm, x2norm, x3norm = newList[0], newList[1], newList[2]
-
-    # матрица градаций серого
-    median = np.median(normArr)  # медиана
-    # третий квартиль
-    Q3 = np.percentile(normArr, 75, interpolation='midpoint')
-    std = np.std(normArr)  # стандартное отклонение
-    Q95 = np.percentile(normArr, 95, interpolation='midpoint')  # 95% квартиль
-
-    df = getGLRLM(normArr)  # GLRLM
-
-    # матрица длин градаций серого
-    # длина 1
-    mean1 = np.mean(df[0])  # среднее значение
-    std1 = np.std(df[0])  # стандартное отклонение
-    skew1 = skew(df[0])  # ассиметрия
-    Q95_1 = np.percentile(df[0], 95, interpolation='midpoint')  # 95% квартиль
-    range1 = max(df[0]) - min(df[0])  # размах
-    # длина 2
-    mean2 = np.mean(df[1])  # среднее значение
-    std2 = np.std(df[1])  # стандартное отклонение
-    skew2 = skew(df[1])  # ассиметрия
-    kurtosis2 = kurtosis(df[1])  # эксцесс
-    range2 = max(df[1]) - min(df[1])  # размах
-    # длина 3
-    mean3 = np.mean(df[2])  # среднее значение
-    std3 = np.std(df[2])  # стандартное отклонение
-    Q95_3 = np.percentile(df[2], 95, interpolation='midpoint')  # 95% квартиль
-    # разницы между амплитудами мод
-    df = df.div(len(a))
-    df = df.multiply(100)
-    dif23 = max(df[1]) - max(df[2])  # 2 - 3
-    dif13 = max(df[0]) - max(df[2])  # 1 - 3
-
+    normArr = getNormArr(arr)  # нормализированная матрица
+    glcm = getGLCM(arr)  # GLCM
+    normGLCM = getGLCM(normArr)  # нормализированная GLCM
+    glrlm = getGLRLM(normArr)  # GLRLM
+    # type_task: 1 - норма/патология, 2 - стадия фиброза
     if type_task == "isNormal":
-        firstRes = linearModel() if type_sensor == "linear" else convexModel()
-        secondRes = clModel()
-    type_result = getTypeResult(type_sensor)
+        # type_sensor: 1 - линейный датчик, 2 - линейный датчик в усиленном режиме (яичко), 3 - конвексный датчик
+        if type_sensor == "linear":
+            res = linearModel()
+        elif type_sensor == "reinforced_linear":
+            res = ballsModel()
+        else:
+            res = convexModel()
+    type_result = "Печень в норме" if res == 1 else "Печень не в норме"
     mean_signs = getMeanSigns(type_sensor)
-    # procent_result = getProcentResult(type_sensor)
     print(json.dumps({"type_result": type_result, "mean_signs": mean_signs}))
 
 
@@ -255,3 +304,4 @@ if __name__ == '__main__':
     type_task = sys.argv[2]
     type_sensor = sys.argv[3]
     main(link, type_task, type_sensor)
+
