@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"image/jpeg"
-	_ "image/png"
+	"image/png"
+	_ "image/jpeg"
 	_ "golang.org/x/image/bmp"
 
 	"../contants"
@@ -48,7 +48,7 @@ func (img *Image) createImage() string {
 		log.Fatal(err)
 	}
 
-	err = jpeg.Encode(f, m, &jpeg.Options{Quality: 75})
+	err = png.Encode(f, m)
 	if err != nil {
 		log.Fatal(err)
 	}
