@@ -1,0 +1,1008 @@
+[
+  {
+    "id": 1,
+    "tree": [
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 18225.0,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.04244482173174872,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01361655773420479,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.7454188639119198,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.021031301384874,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8304097771602234,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 2,
+        "threshold": 18.85207819591866,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04859086491739553,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.200342529129806,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 1,
+        "threshold": 0.02970885323826501,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.763979537837361,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.7488609313064485,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 1,
+        "threshold": 0.5091332139986435,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "Q1(1)_vert",
+        "side": 2,
+        "threshold": 2.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.03189792663476874,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.373815084489628,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q3(1)_hor",
+        "side": 2,
+        "threshold": 180.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.04901960784313725,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8821325803971363,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.136048963550581,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt(1)_hor",
+        "side": 1,
+        "threshold": -0.3108022181117343,
+        "leaf_number": 21,
+        "level_number": 7,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.09569377990430622,
+        "leaf_number": 22,
+        "level_number": 7,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 2,
+        "threshold": 1.532071360479368,
+        "leaf_number": 23,
+        "level_number": 7,
+        "previous_leaf": 20,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.09596621445129,
+        "leaf_number": 24,
+        "level_number": 7,
+        "previous_leaf": 20,
+        "previous_direction": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tree": [
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 0.7125044531528322,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "x1_orig",
+        "side": 1,
+        "threshold": 4900.0,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04161464835622139,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04940711462450593,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 2,
+        "threshold": 1.532071360479368,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.03773584905660377,
+        "leaf_number": 7,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 11.9142176330421,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.136048963550581,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_hor",
+        "side": 2,
+        "threshold": 0.02140181915462814,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8944576804505663,
+        "leaf_number": 11,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9625057574047632,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.186658198387932,
+        "leaf_number": 13,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 8.531816565943831,
+        "leaf_number": 14,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean(2)_hor",
+        "side": 2,
+        "threshold": 7.142857142857143,
+        "leaf_number": 15,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std(1)_vert",
+        "side": 1,
+        "threshold": 105.6900479444689,
+        "leaf_number": 16,
+        "level_number": 7,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tree": [
+      {
+        "feature": "balx2_hor",
+        "side": 2,
+        "threshold": 19.09090141154408,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9366625252894186,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 0.7125044531528322,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.03773584905660377,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 1,
+        "threshold": 0.02465483234714004,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9149009935745104,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.082817496906204,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P5(1)_hor",
+        "side": 1,
+        "threshold": 1.5,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "dif12_hor",
+        "side": 2,
+        "threshold": 6.637806637806637,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.200342529129806,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(3)_hor",
+        "side": 1,
+        "threshold": 2.041031104770727,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.186658198387932,
+        "leaf_number": 12,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8377961865342745,
+        "leaf_number": 13,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.180880804671746,
+        "leaf_number": 14,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew_vert",
+        "side": 2,
+        "threshold": 0.006801542160591482,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.205188999175042,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_orig",
+        "side": 1,
+        "threshold": 6720.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8821325803971363,
+        "leaf_number": 18,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.136048963550581,
+        "leaf_number": 19,
+        "level_number": 5,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.406192997608147,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_vert",
+        "side": 1,
+        "threshold": 1.024767999907563,
+        "leaf_number": 21,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_hor",
+        "side": 2,
+        "threshold": 0.06611570247933884,
+        "leaf_number": 22,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 2,
+        "threshold": 1.532071360479368,
+        "leaf_number": 23,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.09596621445129,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "tree": [
+      {
+        "feature": "dif23_vert",
+        "side": 2,
+        "threshold": 0.4899216125419933,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 0.7125044531528322,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8605521876886243,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8377961865342745,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.069216517036641,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std_vert",
+        "side": 1,
+        "threshold": 10.92422190313452,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.77210703526493,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.060790273556231,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 1,
+        "threshold": 0.02972651605231866,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_hor",
+        "side": 2,
+        "threshold": 21.23363965469229,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x1_hor",
+        "side": 2,
+        "threshold": 812.0,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.01581277672359266,
+        "leaf_number": 12,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.7642751545665868,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.01385041551246538,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 1,
+        "threshold": 0.03556187766714083,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "maxfreq_vert",
+        "side": 1,
+        "threshold": 0.02787068004459309,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_hor",
+        "side": 2,
+        "threshold": 24.11784491193739,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "Q1(1)_hor",
+        "side": 1,
+        "threshold": 6.0,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": 0.1524262886564756,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew_vert",
+        "side": 2,
+        "threshold": -0.007329660877219204,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 14,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9027467592400108,
+        "leaf_number": 21,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt_hor",
+        "side": 1,
+        "threshold": 0.4540662753319058,
+        "leaf_number": 22,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_orig",
+        "side": 1,
+        "threshold": 3481.0,
+        "leaf_number": 23,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "tree": [
+      {
+        "feature": "std_vert",
+        "side": 1,
+        "threshold": 8.310833828255046,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.186658198387932,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8605521876886243,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8479466159177534,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew_hor",
+        "side": 2,
+        "threshold": -0.01155046309753837,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04734848484848485,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 1,
+        "threshold": 0.02970885323826501,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std(3)_vert",
+        "side": 1,
+        "threshold": 1.397806817303657,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.532801961986511,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_orig",
+        "side": 1,
+        "threshold": 6400.0,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 18225.0,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "maxfreq_orig",
+        "side": 2,
+        "threshold": 0.01696928559307653,
+        "leaf_number": 12,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.03556187766714083,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9625057574047632,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt(1)_hor",
+        "side": 2,
+        "threshold": -0.5948501370706594,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q3(1)_hor",
+        "side": 2,
+        "threshold": 152.0,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 2,
+        "threshold": 18.85207819591866,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "Q1(2)_hor",
+        "side": 1,
+        "threshold": 0.5,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9847733260574638,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8721186927616825,
+        "leaf_number": 20,
+        "level_number": 7,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9027467592400108,
+        "leaf_number": 21,
+        "level_number": 8,
+        "previous_leaf": 20,
+        "previous_direction": 1
+      },
+      {
+        "feature": "maxfreq_hor",
+        "side": 1,
+        "threshold": 0.03024803387779795,
+        "leaf_number": 22,
+        "level_number": 9,
+        "previous_leaf": 21,
+        "previous_direction": 2
+      }
+    ]
+  }
+]
