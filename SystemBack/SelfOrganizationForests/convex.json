@@ -3,45 +3,45 @@
     "id": 1,
     "tree": [
       {
-        "feature": "x3_orig",
+        "feature": "x2_orig",
         "side": 1,
-        "threshold": 18225.0,
+        "threshold": 0.4449190247374978,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.04244482173174872,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 54.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
-        "side": 2,
-        "threshold": 0.01361655773420479,
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.146364331182985,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.7454188639119198,
+        "threshold": 11.0,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "median_hor",
         "side": 2,
-        "threshold": 1.021031301384874,
+        "threshold": 26.0,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
@@ -50,25 +50,25 @@
       {
         "feature": "fractal_dim",
         "side": 2,
-        "threshold": 0.8304097771602234,
+        "threshold": 0.8546187508946115,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "balx2_vert",
-        "side": 2,
-        "threshold": 18.85207819591866,
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.9787813804616101,
         "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
-        "side": 1,
-        "threshold": 0.04859086491739553,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.8760754813906684,
         "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
@@ -76,146 +76,272 @@
       },
       {
         "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.200342529129806,
+        "side": 2,
+        "threshold": 0.9092529360834558,
         "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "fractal_dim",
         "side": 1,
-        "threshold": 0.02970885323826501,
+        "threshold": 0.8854061425153529,
         "leaf_number": 10,
-        "level_number": 4,
-        "previous_leaf": 5,
-        "previous_direction": 2
-      },
-      {
-        "feature": "x2_orig",
-        "side": 1,
-        "threshold": 1.763979537837361,
-        "leaf_number": 11,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "x2_orig",
         "side": 2,
-        "threshold": 0.7488609313064485,
+        "threshold": 10.32258064516129,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 18.0,
         "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.054124467602263,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 22.2045,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8304336257305208,
+        "leaf_number": 15,
         "level_number": 5,
         "previous_leaf": 8,
         "previous_direction": 2
       },
       {
-        "feature": "kurt_vert",
-        "side": 1,
-        "threshold": 0.5091332139986435,
-        "leaf_number": 13,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.214369684885716,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.248405383493366,
+        "leaf_number": 17,
         "level_number": 5,
         "previous_leaf": 9,
         "previous_direction": 2
       },
       {
-        "feature": "Q1(1)_vert",
-        "side": 2,
-        "threshold": 2.0,
-        "leaf_number": 14,
-        "level_number": 5,
-        "previous_leaf": 10,
-        "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.03189792663476874,
-        "leaf_number": 15,
-        "level_number": 5,
-        "previous_leaf": 10,
-        "previous_direction": 2
-      },
-      {
-        "feature": "x2_orig",
+        "feature": "range_hor",
         "side": 1,
-        "threshold": 1.373815084489628,
-        "leaf_number": 16,
+        "threshold": 64.0,
+        "leaf_number": 18,
         "level_number": 5,
-        "previous_leaf": 11,
-        "previous_direction": 1
-      },
-      {
-        "feature": "Q3(1)_hor",
-        "side": 2,
-        "threshold": 180.0,
-        "leaf_number": 17,
-        "level_number": 5,
-        "previous_leaf": 11,
+        "previous_leaf": 10,
         "previous_direction": 2
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "mean_hor",
         "side": 2,
-        "threshold": 0.04901960784313725,
-        "leaf_number": 18,
+        "threshold": 17.86347517730496,
+        "leaf_number": 19,
         "level_number": 6,
         "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.101674470708041,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 14,
         "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 0.8821325803971363,
-        "leaf_number": 19,
+        "threshold": 0.8377961865342745,
+        "leaf_number": 21,
+        "level_number": 6,
+        "previous_leaf": 14,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 40.0,
+        "leaf_number": 22,
         "level_number": 6,
         "previous_leaf": 15,
         "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.065362307280904,
+        "leaf_number": 23,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 1.474955875046873,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_vert",
         "side": 2,
-        "threshold": 1.136048963550581,
-        "leaf_number": 20,
+        "threshold": 4.07143721733772,
+        "leaf_number": 25,
         "level_number": 6,
         "previous_leaf": 16,
         "previous_direction": 2
       },
       {
-        "feature": "kurt(1)_hor",
-        "side": 1,
-        "threshold": -0.3108022181117343,
-        "leaf_number": 21,
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P95_vert",
+        "side": 2,
+        "threshold": 51.0,
+        "leaf_number": 27,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.6459719008772373,
+        "leaf_number": 28,
         "level_number": 7,
         "previous_leaf": 19,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "fractal_dim",
         "side": 2,
-        "threshold": 0.09569377990430622,
-        "leaf_number": 22,
+        "threshold": 0.8735964262764105,
+        "leaf_number": 29,
         "level_number": 7,
-        "previous_leaf": 19,
+        "previous_leaf": 20,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 1,
+        "threshold": 0.7054396905302531,
+        "leaf_number": 30,
+        "level_number": 7,
+        "previous_leaf": 20,
         "previous_direction": 2
       },
       {
-        "feature": "x2_orig",
+        "feature": "fractal_dim",
         "side": 2,
-        "threshold": 1.532071360479368,
-        "leaf_number": 23,
+        "threshold": 0.8714519516948681,
+        "leaf_number": 31,
         "level_number": 7,
-        "previous_leaf": 20,
+        "previous_leaf": 21,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.037063401085454,
+        "leaf_number": 32,
+        "level_number": 7,
+        "previous_leaf": 23,
         "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 1.09596621445129,
-        "leaf_number": 24,
-        "level_number": 7,
-        "previous_leaf": 20,
+        "threshold": 0.8479466159177534,
+        "leaf_number": 33,
+        "level_number": 8,
+        "previous_leaf": 29,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9366625252894186,
+        "leaf_number": 34,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 12.0,
+        "leaf_number": 35,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 26.22733516483516,
+        "leaf_number": 36,
+        "level_number": 8,
+        "previous_leaf": 32,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 50.0,
+        "leaf_number": 37,
+        "level_number": 9,
+        "previous_leaf": 33,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 1,
+        "threshold": 3.288391976323578,
+        "leaf_number": 38,
+        "level_number": 9,
+        "previous_leaf": 34,
         "previous_direction": 2
       }
     ]
@@ -224,148 +350,283 @@
     "id": 2,
     "tree": [
       {
-        "feature": "x2_orig",
+        "feature": "x1_vert",
         "side": 1,
-        "threshold": 0.7125044531528322,
+        "threshold": 1482.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "x1_orig",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 4900.0,
+        "threshold": 11.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.04161464835622139,
+        "threshold": 17.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "x2_orig",
-        "side": 0,
-        "threshold": 0,
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.115358974783179,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "range_hor",
         "side": 1,
-        "threshold": 0.04940711462450593,
+        "threshold": 53.0,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "x2_orig",
-        "side": 2,
-        "threshold": 1.532071360479368,
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.019443544656505,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.03773584905660377,
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.724435247456458,
         "leaf_number": 7,
-        "level_number": 4,
-        "previous_leaf": 5,
-        "previous_direction": 1
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
       },
       {
-        "feature": "balx2_orig",
-        "side": 2,
-        "threshold": 11.9142176330421,
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 21.0,
         "leaf_number": 8,
         "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.205188999175042,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.8760754813906684,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 70.0,
+        "leaf_number": 11,
+        "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "x1_vert",
         "side": 2,
-        "threshold": 1.136048963550581,
-        "leaf_number": 9,
+        "threshold": 1722.0,
+        "leaf_number": 12,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
+        "feature": "P5_hor",
         "side": 2,
-        "threshold": 0.02140181915462814,
-        "leaf_number": 10,
+        "threshold": 15.0,
+        "leaf_number": 13,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 2
       },
       {
         "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 0.8944576804505663,
-        "leaf_number": 11,
-        "level_number": 5,
+        "side": 1,
+        "threshold": 1.152892352215542,
+        "leaf_number": 14,
+        "level_number": 4,
         "previous_leaf": 7,
-        "previous_direction": 2
+        "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "x2_orig",
         "side": 1,
-        "threshold": 0.9625057574047632,
-        "leaf_number": 12,
+        "threshold": 4.737091425864519,
+        "leaf_number": 15,
         "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 2
+        "previous_leaf": 8,
+        "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 1.186658198387932,
-        "leaf_number": 13,
-        "level_number": 6,
+        "threshold": 0.6402842525172568,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 1.030046188630798,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8834529159118717,
+        "leaf_number": 18,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 58.0,
+        "leaf_number": 19,
+        "level_number": 5,
         "previous_leaf": 11,
         "previous_direction": 1
       },
       {
-        "feature": "balx2_orig",
+        "feature": "kurt_vert",
         "side": 2,
-        "threshold": 8.531816565943831,
-        "leaf_number": 14,
-        "level_number": 6,
-        "previous_leaf": 12,
+        "threshold": 1.054716942861987,
+        "leaf_number": 20,
+        "level_number": 5,
+        "previous_leaf": 14,
         "previous_direction": 1
       },
       {
-        "feature": "mean(2)_hor",
-        "side": 2,
-        "threshold": 7.142857142857143,
-        "leaf_number": 15,
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.417434443656981,
+        "leaf_number": 21,
         "level_number": 6,
-        "previous_leaf": 12,
+        "previous_leaf": 17,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 2.97707651086633,
+        "leaf_number": 22,
+        "level_number": 6,
+        "previous_leaf": 17,
         "previous_direction": 2
       },
       {
-        "feature": "std(1)_vert",
-        "side": 1,
-        "threshold": 105.6900479444689,
-        "leaf_number": 16,
-        "level_number": 7,
-        "previous_leaf": 15,
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 21.00299003322259,
+        "leaf_number": 23,
+        "level_number": 6,
+        "previous_leaf": 18,
         "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.7111570940835671,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(3)_hor",
+        "side": 2,
+        "threshold": 2.727522864075666,
+        "leaf_number": 25,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8102867128136714,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 2,
+        "threshold": 10.32258064516129,
+        "leaf_number": 27,
+        "level_number": 7,
+        "previous_leaf": 21,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8377961865342745,
+        "leaf_number": 28,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.6935536405060121,
+        "leaf_number": 29,
+        "level_number": 7,
+        "previous_leaf": 26,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 26.99958847736626,
+        "leaf_number": 30,
+        "level_number": 7,
+        "previous_leaf": 26,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 31,
+        "level_number": 8,
+        "previous_leaf": 28,
+        "previous_direction": 2
       }
     ]
   },
@@ -373,54 +634,54 @@
     "id": 3,
     "tree": [
       {
-        "feature": "balx2_hor",
-        "side": 2,
-        "threshold": 19.09090141154408,
+        "feature": "P95_vert",
+        "side": 1,
+        "threshold": 54.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.9366625252894186,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.154223969437,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "x2_orig",
+        "feature": "fractal_dim",
         "side": 1,
-        "threshold": 0.7125044531528322,
+        "threshold": 1.152892352215542,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "mean_hor",
         "side": 2,
-        "threshold": 0.03773584905660377,
+        "threshold": 28.74179292929293,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.02465483234714004,
+        "threshold": 18.0,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 0.9149009935745104,
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 2.503755633450175,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
@@ -428,102 +689,102 @@
       },
       {
         "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.082817496906204,
+        "side": 1,
+        "threshold": 1.236914112974976,
         "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
+        "level_number": 4,
+        "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "P5(1)_hor",
-        "side": 1,
-        "threshold": 1.5,
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 13.0,
         "leaf_number": 8,
         "level_number": 4,
-        "previous_leaf": 4,
+        "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "dif12_hor",
-        "side": 2,
-        "threshold": 6.637806637806637,
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8665139431978576,
         "leaf_number": 9,
         "level_number": 4,
-        "previous_leaf": 4,
+        "previous_leaf": 5,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "range_hor",
         "side": 1,
-        "threshold": 1.200342529129806,
+        "threshold": 62.0,
         "leaf_number": 10,
         "level_number": 4,
-        "previous_leaf": 5,
+        "previous_leaf": 6,
         "previous_direction": 1
       },
       {
-        "feature": "skew(3)_hor",
+        "feature": "mean_hor",
         "side": 1,
-        "threshold": 2.041031104770727,
+        "threshold": 29.12031408308004,
         "leaf_number": 11,
         "level_number": 4,
-        "previous_leaf": 5,
+        "previous_leaf": 6,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.186658198387932,
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 46.0,
         "leaf_number": 12,
-        "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.8377961865342745,
-        "leaf_number": 13,
-        "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.180880804671746,
-        "leaf_number": 14,
-        "level_number": 4,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "skew_vert",
-        "side": 2,
-        "threshold": 0.006801542160591482,
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 17.0,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 19.91991263196214,
         "leaf_number": 15,
         "level_number": 5,
-        "previous_leaf": 10,
+        "previous_leaf": 8,
         "previous_direction": 2
       },
       {
         "feature": "skew(1)_hor",
-        "side": 2,
-        "threshold": 1.205188999175042,
+        "side": 1,
+        "threshold": 1.097644296208982,
         "leaf_number": 16,
         "level_number": 5,
-        "previous_leaf": 12,
-        "previous_direction": 2
+        "previous_leaf": 9,
+        "previous_direction": 1
       },
       {
-        "feature": "x1_orig",
-        "side": 1,
-        "threshold": 6720.0,
+        "feature": "kurt_vert",
+        "side": 2,
+        "threshold": 1.403657028897895,
         "leaf_number": 17,
         "level_number": 5,
-        "previous_leaf": 13,
-        "previous_direction": 1
+        "previous_leaf": 9,
+        "previous_direction": 2
       },
       {
         "feature": "fractal_dim",
@@ -531,8 +792,8 @@
         "threshold": 0.8821325803971363,
         "leaf_number": 18,
         "level_number": 5,
-        "previous_leaf": 13,
-        "previous_direction": 2
+        "previous_leaf": 10,
+        "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
@@ -540,52 +801,142 @@
         "threshold": 1.136048963550581,
         "leaf_number": 19,
         "level_number": 5,
-        "previous_leaf": 14,
-        "previous_direction": 1
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9606259149481655,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 2
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 1.406192997608147,
-        "leaf_number": 20,
+        "threshold": 1.115358974783179,
+        "leaf_number": 21,
         "level_number": 6,
         "previous_leaf": 15,
         "previous_direction": 1
       },
       {
-        "feature": "skew(1)_vert",
+        "feature": "median_hor",
         "side": 1,
-        "threshold": 1.024767999907563,
-        "leaf_number": 21,
-        "level_number": 6,
-        "previous_leaf": 17,
-        "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_hor",
-        "side": 2,
-        "threshold": 0.06611570247933884,
+        "threshold": 23.0,
         "leaf_number": 22,
         "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9657008283830569,
+        "leaf_number": 23,
+        "level_number": 6,
         "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std(2)_hor",
+        "side": 1,
+        "threshold": 18.22755760744437,
+        "leaf_number": 24,
+        "level_number": 7,
+        "previous_leaf": 20,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.040474243693721,
+        "leaf_number": 25,
+        "level_number": 7,
+        "previous_leaf": 21,
         "previous_direction": 1
       },
       {
         "feature": "x2_orig",
-        "side": 2,
-        "threshold": 1.532071360479368,
-        "leaf_number": 23,
-        "level_number": 6,
-        "previous_leaf": 19,
+        "side": 1,
+        "threshold": 1.417434443656981,
+        "leaf_number": 26,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 1,
+        "threshold": 16.67625551358698,
+        "leaf_number": 27,
+        "level_number": 7,
+        "previous_leaf": 23,
         "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 1.09596621445129,
-        "leaf_number": 24,
-        "level_number": 6,
-        "previous_leaf": 19,
+        "threshold": 0.6786687432666714,
+        "leaf_number": 28,
+        "level_number": 8,
+        "previous_leaf": 25,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 29,
+        "level_number": 8,
+        "previous_leaf": 26,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8854061425153529,
+        "leaf_number": 30,
+        "level_number": 8,
+        "previous_leaf": 26,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 17.00745341614907,
+        "leaf_number": 31,
+        "level_number": 9,
+        "previous_leaf": 28,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8304336257305208,
+        "leaf_number": 32,
+        "level_number": 10,
+        "previous_leaf": 31,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 1,
+        "threshold": 0.4346687114006729,
+        "leaf_number": 33,
+        "level_number": 10,
+        "previous_leaf": 31,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8709296902887445,
+        "leaf_number": 34,
+        "level_number": 11,
+        "previous_leaf": 32,
         "previous_direction": 2
       }
     ]
@@ -594,54 +945,54 @@
     "id": 4,
     "tree": [
       {
-        "feature": "dif23_vert",
-        "side": 2,
-        "threshold": 0.4899216125419933,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 54.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "x2_orig",
-        "side": 1,
-        "threshold": 0.7125044531528322,
+        "feature": "median_hor",
+        "side": 2,
+        "threshold": 24.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.8605521876886243,
+        "threshold": 20.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.8377961865342745,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.154223969437,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.069216517036641,
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 44.0,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "std_vert",
+        "feature": "range_hor",
         "side": 1,
-        "threshold": 10.92422190313452,
+        "threshold": 64.0,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
@@ -650,154 +1001,379 @@
       {
         "feature": "x2_orig",
         "side": 1,
-        "threshold": 1.77210703526493,
+        "threshold": 0.4449190247374978,
         "leaf_number": 7,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 2
       },
       {
-        "feature": "minfreq_orig",
-        "side": 2,
-        "threshold": 0.060790273556231,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 45.0,
         "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
-        "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_orig",
-        "side": 1,
-        "threshold": 0.02972651605231866,
-        "leaf_number": 9,
-        "level_number": 4,
-        "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "balx2_hor",
-        "side": 2,
-        "threshold": 21.23363965469229,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 47.0,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.9201395870389192,
         "leaf_number": 10,
         "level_number": 4,
         "previous_leaf": 5,
-        "previous_direction": 1
-      },
-      {
-        "feature": "x1_hor",
-        "side": 2,
-        "threshold": 812.0,
-        "leaf_number": 11,
-        "level_number": 4,
-        "previous_leaf": 5,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "x2_orig",
         "side": 2,
-        "threshold": 0.01581277672359266,
+        "threshold": 4.58201812442725,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 29.12031408308004,
         "leaf_number": 12,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9350652400608858,
+        "leaf_number": 13,
         "level_number": 4,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "P5_hor",
         "side": 2,
-        "threshold": 0.7642751545665868,
-        "leaf_number": 13,
+        "threshold": 25.0,
+        "leaf_number": 14,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8479466159177534,
+        "leaf_number": 15,
         "level_number": 5,
         "previous_leaf": 8,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.01385041551246538,
-        "leaf_number": 14,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_orig",
+        "feature": "fractal_dim",
         "side": 1,
-        "threshold": 0.03556187766714083,
-        "leaf_number": 15,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 2
-      },
-      {
-        "feature": "maxfreq_vert",
-        "side": 1,
-        "threshold": 0.02787068004459309,
+        "threshold": 1.200342529129806,
         "leaf_number": 16,
         "level_number": 5,
-        "previous_leaf": 12,
+        "previous_leaf": 9,
         "previous_direction": 1
       },
       {
-        "feature": "balx2_hor",
-        "side": 2,
-        "threshold": 24.11784491193739,
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8612396790062734,
         "leaf_number": 17,
         "level_number": 5,
-        "previous_leaf": 12,
-        "previous_direction": 2
-      },
-      {
-        "feature": "Q1(1)_hor",
-        "side": 1,
-        "threshold": 6.0,
-        "leaf_number": 18,
-        "level_number": 6,
-        "previous_leaf": 13,
-        "previous_direction": 2
-      },
-      {
-        "feature": "skew_hor",
-        "side": 1,
-        "threshold": 0.1524262886564756,
-        "leaf_number": 19,
-        "level_number": 6,
-        "previous_leaf": 14,
-        "previous_direction": 1
-      },
-      {
-        "feature": "skew_vert",
-        "side": 2,
-        "threshold": -0.007329660877219204,
-        "leaf_number": 20,
-        "level_number": 6,
-        "previous_leaf": 14,
+        "previous_leaf": 9,
         "previous_direction": 2
       },
       {
         "feature": "fractal_dim",
         "side": 1,
-        "threshold": 0.9027467592400108,
-        "leaf_number": 21,
-        "level_number": 6,
-        "previous_leaf": 15,
+        "threshold": 0.6402842525172568,
+        "leaf_number": 18,
+        "level_number": 5,
+        "previous_leaf": 10,
         "previous_direction": 1
       },
       {
-        "feature": "kurt_hor",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.4540662753319058,
+        "threshold": 11.0,
+        "leaf_number": 19,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 1.256353575877979,
+        "leaf_number": 20,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std(2)_hor",
+        "side": 1,
+        "threshold": 23.44352669683695,
+        "leaf_number": 21,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 34.5179584120983,
         "leaf_number": 22,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 72.0,
+        "leaf_number": 23,
+        "level_number": 5,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.143309770580169,
+        "leaf_number": 24,
         "level_number": 6,
         "previous_leaf": 15,
         "previous_direction": 2
       },
       {
-        "feature": "x1_orig",
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9218206037191825,
+        "leaf_number": 25,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
         "side": 1,
-        "threshold": 3481.0,
-        "leaf_number": 23,
-        "level_number": 7,
+        "threshold": 22.11319394376352,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 37.0,
+        "leaf_number": 27,
+        "level_number": 6,
         "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.115358974783179,
+        "leaf_number": 28,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 13.0,
+        "leaf_number": 29,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 55.0,
+        "leaf_number": 30,
+        "level_number": 6,
+        "previous_leaf": 20,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.06851487585122,
+        "leaf_number": 31,
+        "level_number": 7,
+        "previous_leaf": 24,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8854061425153529,
+        "leaf_number": 32,
+        "level_number": 7,
+        "previous_leaf": 25,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8952770838007461,
+        "leaf_number": 33,
+        "level_number": 7,
+        "previous_leaf": 27,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9199732343145819,
+        "leaf_number": 34,
+        "level_number": 7,
+        "previous_leaf": 27,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.205188999175042,
+        "leaf_number": 35,
+        "level_number": 7,
+        "previous_leaf": 28,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.077426670864197,
+        "leaf_number": 36,
+        "level_number": 7,
+        "previous_leaf": 29,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9366625252894186,
+        "leaf_number": 37,
+        "level_number": 7,
+        "previous_leaf": 29,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(3)_hor",
+        "side": 2,
+        "threshold": 2.445825962282352,
+        "leaf_number": 38,
+        "level_number": 7,
+        "previous_leaf": 30,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.8916146146299936,
+        "leaf_number": 39,
+        "level_number": 7,
+        "previous_leaf": 30,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P5_vert",
+        "side": 2,
+        "threshold": 17.0,
+        "leaf_number": 40,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 39.0,
+        "leaf_number": 41,
+        "level_number": 8,
+        "previous_leaf": 33,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 1,
+        "threshold": 1.068397092749325,
+        "leaf_number": 42,
+        "level_number": 8,
+        "previous_leaf": 33,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.7605807892606665,
+        "leaf_number": 43,
+        "level_number": 8,
+        "previous_leaf": 34,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 1,
+        "threshold": 3.84172109104879,
+        "leaf_number": 44,
+        "level_number": 8,
+        "previous_leaf": 36,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 2,
+        "threshold": 3.27653997378768,
+        "leaf_number": 45,
+        "level_number": 9,
+        "previous_leaf": 41,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 6.65335994677312,
+        "leaf_number": 46,
+        "level_number": 9,
+        "previous_leaf": 43,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.7714437119978599,
+        "leaf_number": 47,
+        "level_number": 9,
+        "previous_leaf": 43,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 48,
+        "level_number": 10,
+        "previous_leaf": 45,
         "previous_direction": 2
       }
     ]
@@ -806,202 +1382,1229 @@
     "id": 5,
     "tree": [
       {
-        "feature": "std_vert",
+        "feature": "fractal_dim",
         "side": 1,
-        "threshold": 8.310833828255046,
+        "threshold": 1.065362307280904,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "fractal_dim",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 1.186658198387932,
+        "threshold": 18.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.8605521876886243,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.163053459043508,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "P5_hor",
         "side": 1,
-        "threshold": 0.8479466159177534,
+        "threshold": 11.0,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "skew_hor",
-        "side": 2,
-        "threshold": -0.01155046309753837,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 62.0,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "median_hor",
         "side": 1,
-        "threshold": 0.04734848484848485,
+        "threshold": 27.0,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "x2_orig",
         "side": 1,
-        "threshold": 0.02970885323826501,
+        "threshold": 0.8019782129252156,
         "leaf_number": 7,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 2
       },
       {
-        "feature": "std(3)_vert",
-        "side": 1,
-        "threshold": 1.397806817303657,
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 37.0,
         "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "x2_orig",
-        "side": 1,
-        "threshold": 1.532801961986511,
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.9186899719582329,
         "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "x1_orig",
-        "side": 1,
-        "threshold": 6400.0,
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.953581764151192,
         "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.6115682614624652,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(3)_hor",
+        "side": 1,
+        "threshold": 2.924048502003815,
+        "leaf_number": 12,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 1
       },
       {
-        "feature": "x3_orig",
+        "feature": "fractal_dim",
         "side": 1,
-        "threshold": 18225.0,
-        "leaf_number": 11,
+        "threshold": 1.224284311025198,
+        "leaf_number": 13,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 27.0,
+        "leaf_number": 14,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
         "side": 2,
-        "threshold": 0.01696928559307653,
+        "threshold": 0.6459719008772373,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 4.737091425864519,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 22.2045,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 22.65169270833333,
+        "leaf_number": 18,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8479466159177534,
+        "leaf_number": 19,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P95_vert",
+        "side": 1,
+        "threshold": 45.0,
+        "leaf_number": 20,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 1,
+        "threshold": 14.03755044744692,
+        "leaf_number": 21,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_vert",
+        "side": 1,
+        "threshold": 1.212605673900965,
+        "leaf_number": 22,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.200342529129806,
+        "leaf_number": 23,
+        "level_number": 5,
+        "previous_leaf": 14,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8821325803971363,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 37.0,
+        "leaf_number": 25,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 3.044140030441401,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.7213493270258712,
+        "leaf_number": 27,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 50.0,
+        "leaf_number": 28,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.100240099128663,
+        "leaf_number": 29,
+        "level_number": 6,
+        "previous_leaf": 23,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9199732343145819,
+        "leaf_number": 30,
+        "level_number": 7,
+        "previous_leaf": 24,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8612396790062734,
+        "leaf_number": 31,
+        "level_number": 7,
+        "previous_leaf": 25,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 40.0,
+        "leaf_number": 32,
+        "level_number": 7,
+        "previous_leaf": 26,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8854061425153529,
+        "leaf_number": 33,
+        "level_number": 7,
+        "previous_leaf": 26,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8102867128136714,
+        "leaf_number": 34,
+        "level_number": 7,
+        "previous_leaf": 27,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 16.0,
+        "leaf_number": 35,
+        "level_number": 7,
+        "previous_leaf": 29,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8714519516948681,
+        "leaf_number": 36,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_vert",
+        "side": 1,
+        "threshold": 783.0,
+        "leaf_number": 37,
+        "level_number": 8,
+        "previous_leaf": 34,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9731310178234196,
+        "leaf_number": 38,
+        "level_number": 9,
+        "previous_leaf": 36,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 2.97707651086633,
+        "leaf_number": 39,
+        "level_number": 10,
+        "previous_leaf": 38,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x1_vert",
+        "side": 1,
+        "threshold": 1296.0,
+        "leaf_number": 40,
+        "level_number": 10,
+        "previous_leaf": 38,
+        "previous_direction": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "tree": [
+      {
+        "feature": "Q1_vert",
+        "side": 1,
+        "threshold": 33.0,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.154223969437,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.9003829456284773,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 23.25651041666667,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 26.99958847736626,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9657008283830569,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 20.0,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std(2)_hor",
+        "side": 1,
+        "threshold": 25.59453764268574,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 18.26838905775076,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 1.030046188630798,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.183456360503365,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_vert",
+        "side": 2,
+        "threshold": 13.49940144163419,
+        "leaf_number": 12,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 29.0,
+        "leaf_number": 13,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.152892352215542,
+        "leaf_number": 14,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8999187553864348,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "median_hor",
+        "side": 2,
+        "threshold": 26.0,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 22.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9149009935745104,
+        "leaf_number": 18,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 0.8019782129252156,
+        "leaf_number": 19,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.724435247456458,
+        "leaf_number": 20,
+        "level_number": 5,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.9606259149481655,
+        "leaf_number": 21,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 23.0,
+        "leaf_number": 22,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 2
+      },
+      {
+        "feature": "median_hor",
+        "side": 2,
+        "threshold": 19.0,
+        "leaf_number": 23,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.064263355270312,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 2,
+        "threshold": 0.5923598298278132,
+        "leaf_number": 25,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(3)_hor",
+        "side": 1,
+        "threshold": 2.753873598517866,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.019443544656505,
+        "leaf_number": 27,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "median(2)_vert",
+        "side": 1,
+        "threshold": 1.0,
+        "leaf_number": 28,
+        "level_number": 6,
+        "previous_leaf": 19,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 38.0,
+        "leaf_number": 29,
+        "level_number": 7,
+        "previous_leaf": 21,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 21.00299003322259,
+        "leaf_number": 30,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.06851487585122,
+        "leaf_number": 31,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.533859631043154,
+        "leaf_number": 32,
+        "level_number": 7,
+        "previous_leaf": 23,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 25.02831715210356,
+        "leaf_number": 33,
+        "level_number": 7,
+        "previous_leaf": 24,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8612396790062734,
+        "leaf_number": 34,
+        "level_number": 7,
+        "previous_leaf": 24,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 26.18470175438597,
+        "leaf_number": 35,
+        "level_number": 7,
+        "previous_leaf": 27,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8952770838007461,
+        "leaf_number": 36,
+        "level_number": 8,
+        "previous_leaf": 30,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 1.417434443656981,
+        "leaf_number": 37,
+        "level_number": 8,
+        "previous_leaf": 30,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 13.0,
+        "leaf_number": 38,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.9771706238193604,
+        "leaf_number": 39,
+        "level_number": 8,
+        "previous_leaf": 31,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_vert",
+        "side": 1,
+        "threshold": 841.0,
+        "leaf_number": 40,
+        "level_number": 8,
+        "previous_leaf": 32,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.981019367586893,
+        "leaf_number": 41,
+        "level_number": 9,
+        "previous_leaf": 36,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 11.0,
+        "leaf_number": 42,
+        "level_number": 9,
+        "previous_leaf": 37,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt(1)_vert",
+        "side": 1,
+        "threshold": -0.8112613251103156,
+        "leaf_number": 43,
+        "level_number": 9,
+        "previous_leaf": 37,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.267238132961419,
+        "leaf_number": 44,
+        "level_number": 10,
+        "previous_leaf": 42,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.9144656814953595,
+        "leaf_number": 45,
+        "level_number": 10,
+        "previous_leaf": 42,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.115358974783179,
+        "leaf_number": 46,
+        "level_number": 10,
+        "previous_leaf": 43,
+        "previous_direction": 1
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 20.91693548387097,
+        "leaf_number": 47,
+        "level_number": 11,
+        "previous_leaf": 44,
+        "previous_direction": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "tree": [
+      {
+        "feature": "median_hor",
+        "side": 1,
+        "threshold": 28.0,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "median_hor",
+        "side": 2,
+        "threshold": 26.0,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 20.0,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 18.0,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 1.071730802723553,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 2.503755633450175,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 0.4449190247374978,
+        "leaf_number": 7,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.251387007432791,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 2.97707651086633,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 1,
+        "threshold": 10.0,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.067024158818382,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.243495333933342,
         "leaf_number": 12,
         "level_number": 4,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
-        "side": 1,
-        "threshold": 0.03556187766714083,
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 25.0,
         "leaf_number": 13,
+        "level_number": 4,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range(3)_vert",
+        "side": 2,
+        "threshold": 2.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 34.0,
+        "leaf_number": 15,
         "level_number": 5,
         "previous_leaf": 9,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.9625057574047632,
-        "leaf_number": 14,
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 30.0,
+        "leaf_number": 16,
         "level_number": 5,
-        "previous_leaf": 9,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 37.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 10,
         "previous_direction": 2
       },
       {
-        "feature": "kurt(1)_hor",
+        "feature": "x2_orig",
         "side": 2,
-        "threshold": -0.5948501370706594,
-        "leaf_number": 15,
+        "threshold": 2.083767451552407,
+        "leaf_number": 18,
         "level_number": 5,
         "previous_leaf": 11,
         "previous_direction": 1
       },
       {
-        "feature": "Q3(1)_hor",
+        "feature": "skew(1)_hor",
         "side": 2,
-        "threshold": 152.0,
-        "leaf_number": 16,
+        "threshold": 1.214369684885716,
+        "leaf_number": 19,
         "level_number": 5,
         "previous_leaf": 12,
         "previous_direction": 1
+      },
+      {
+        "feature": "std(2)_hor",
+        "side": 1,
+        "threshold": 23.44352669683695,
+        "leaf_number": 20,
+        "level_number": 5,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 72.0,
+        "leaf_number": 21,
+        "level_number": 5,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 1.256353575877979,
+        "leaf_number": 22,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 2,
+        "threshold": 0.6256367734171991,
+        "leaf_number": 23,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_vert",
+        "side": 1,
+        "threshold": 0.9183417851176483,
+        "leaf_number": 24,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 2,
+        "threshold": 21.00299003322259,
+        "leaf_number": 25,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q1_vert",
+        "side": 1,
+        "threshold": 21.0,
+        "leaf_number": 26,
+        "level_number": 6,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 0,
+        "threshold": 0,
+        "leaf_number": 27,
+        "level_number": 6,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9731310178234196,
+        "leaf_number": 28,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.236914112974976,
+        "leaf_number": 29,
+        "level_number": 7,
+        "previous_leaf": 22,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x2_orig",
+        "side": 1,
+        "threshold": 4.737091425864519,
+        "leaf_number": 30,
+        "level_number": 7,
+        "previous_leaf": 23,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.6402842525172568,
+        "leaf_number": 31,
+        "level_number": 7,
+        "previous_leaf": 23,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 22.45692776824852,
+        "leaf_number": 32,
+        "level_number": 7,
+        "previous_leaf": 25,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew(1)_hor",
+        "side": 1,
+        "threshold": 0.9280986419183729,
+        "leaf_number": 33,
+        "level_number": 7,
+        "previous_leaf": 25,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt_vert",
+        "side": 1,
+        "threshold": 0.829285696833983,
+        "leaf_number": 34,
+        "level_number": 8,
+        "previous_leaf": 28,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 1.089022427441805,
+        "leaf_number": 35,
+        "level_number": 8,
+        "previous_leaf": 29,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8612396790062734,
+        "leaf_number": 36,
+        "level_number": 8,
+        "previous_leaf": 32,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.8834529159118717,
+        "leaf_number": 37,
+        "level_number": 8,
+        "previous_leaf": 32,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 41.0,
+        "leaf_number": 38,
+        "level_number": 8,
+        "previous_leaf": 33,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x1_vert",
+        "side": 1,
+        "threshold": 1089.0,
+        "leaf_number": 39,
+        "level_number": 8,
+        "previous_leaf": 33,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 0.9366625252894186,
+        "leaf_number": 40,
+        "level_number": 9,
+        "previous_leaf": 35,
+        "previous_direction": 2
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 2,
+        "threshold": 0.8772818823200327,
+        "leaf_number": 41,
+        "level_number": 9,
+        "previous_leaf": 36,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 54.0,
+        "leaf_number": 42,
+        "level_number": 9,
+        "previous_leaf": 37,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_hor",
+        "side": 2,
+        "threshold": 14.0,
+        "leaf_number": 43,
+        "level_number": 9,
+        "previous_leaf": 37,
+        "previous_direction": 2
+      },
+      {
+        "feature": "mean_hor",
+        "side": 1,
+        "threshold": 20.88615916955017,
+        "leaf_number": 44,
+        "level_number": 9,
+        "previous_leaf": 38,
+        "previous_direction": 1
+      },
+      {
+        "feature": "fractal_dim",
+        "side": 1,
+        "threshold": 1.065362307280904,
+        "leaf_number": 45,
+        "level_number": 9,
+        "previous_leaf": 38,
+        "previous_direction": 2
       },
       {
         "feature": "balx2_vert",
-        "side": 2,
-        "threshold": 18.85207819591866,
-        "leaf_number": 17,
-        "level_number": 5,
-        "previous_leaf": 12,
-        "previous_direction": 2
+        "side": 1,
+        "threshold": 6.188118811881188,
+        "leaf_number": 46,
+        "level_number": 10,
+        "previous_leaf": 41,
+        "previous_direction": 1
       },
       {
-        "feature": "Q1(2)_hor",
+        "feature": "mean_hor",
         "side": 1,
-        "threshold": 0.5,
-        "leaf_number": 18,
-        "level_number": 6,
-        "previous_leaf": 13,
+        "threshold": 25.10911035835265,
+        "leaf_number": 47,
+        "level_number": 10,
+        "previous_leaf": 43,
         "previous_direction": 1
       },
       {
         "feature": "fractal_dim",
         "side": 2,
-        "threshold": 0.9847733260574638,
-        "leaf_number": 19,
-        "level_number": 6,
-        "previous_leaf": 13,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 0.8721186927616825,
-        "leaf_number": 20,
-        "level_number": 7,
-        "previous_leaf": 19,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 0.9027467592400108,
-        "leaf_number": 21,
-        "level_number": 8,
-        "previous_leaf": 20,
+        "threshold": 0.7642751545665868,
+        "leaf_number": 48,
+        "level_number": 10,
+        "previous_leaf": 45,
         "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_hor",
-        "side": 1,
-        "threshold": 0.03024803387779795,
-        "leaf_number": 22,
-        "level_number": 9,
-        "previous_leaf": 21,
-        "previous_direction": 2
       }
     ]
   }

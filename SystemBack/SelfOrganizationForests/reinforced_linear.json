@@ -3,148 +3,166 @@
     "id": 1,
     "tree": [
       {
-        "feature": "pair6153_vert",
-        "side": 2,
-        "threshold": 0.7937347867499206,
+        "feature": "kurt(2)_vert",
+        "side": 1,
+        "threshold": 0.4347446832150768,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "x3_orig",
+        "feature": "range_hor",
         "side": 2,
-        "threshold": 40000.0,
+        "threshold": 29.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "Q1(2)_hor",
-        "side": 1,
-        "threshold": 0.5,
+        "feature": "x3_orig",
+        "side": 2,
+        "threshold": 17161.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "balx2_orig",
-        "side": 2,
-        "threshold": 5.850958094387956,
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 11881.0,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "skew_hor",
         "side": 1,
-        "threshold": 0.009818360333824251,
+        "threshold": -0.03933676049472466,
         "leaf_number": 5,
-        "level_number": 3,
-        "previous_leaf": 2,
-        "previous_direction": 2
-      },
-      {
-        "feature": "kurt_vert",
-        "side": 2,
-        "threshold": 0.04630328643769177,
-        "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "P5_hor",
-        "side": 2,
-        "threshold": 22.0,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 10.0,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04955892556249381,
         "leaf_number": 7,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 2.911272848491583,
+        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.551659828174034,
-        "leaf_number": 8,
-        "level_number": 4,
-        "previous_leaf": 5,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.110391436172116,
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01157943492357573,
         "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
-        "previous_direction": 2
-      },
-      {
-        "feature": "skew(2)_hor",
-        "side": 1,
-        "threshold": 1.71740401738904,
-        "leaf_number": 10,
-        "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.628963121328352,
-        "leaf_number": 11,
-        "level_number": 5,
-        "previous_leaf": 8,
-        "previous_direction": 2
-      },
-      {
-        "feature": "x1_orig",
-        "side": 2,
-        "threshold": 5037.0,
-        "leaf_number": 12,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 1
-      },
-      {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
-        "leaf_number": 13,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 2
-      },
-      {
-        "feature": "median(1)_vert",
-        "side": 2,
-        "threshold": 96.5,
-        "leaf_number": 14,
-        "level_number": 6,
-        "previous_leaf": 11,
-        "previous_direction": 1
-      },
-      {
-        "feature": "Q1(1)_vert",
-        "side": 1,
-        "threshold": 6.0,
-        "leaf_number": 15,
-        "level_number": 6,
-        "previous_leaf": 13,
         "previous_direction": 1
       },
       {
         "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.0130965477500131,
-        "leaf_number": 16,
-        "level_number": 7,
-        "previous_leaf": 14,
+        "threshold": 0.01000250062515629,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
         "previous_direction": 2
+      },
+      {
+        "feature": "skew_hor",
+        "side": 2,
+        "threshold": -0.0008095978508333808,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "std_hor",
+        "side": 2,
+        "threshold": 4.721530265905347,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "pair2219_hor",
+        "side": 2,
+        "threshold": 68.43053054439673,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 43.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 0.9589419418190747,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.613573789746974,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 22201.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 1,
+        "threshold": 0.01336898395721925,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
       }
     ]
   },
@@ -152,9 +170,9 @@
     "id": 2,
     "tree": [
       {
-        "feature": "std_vert",
+        "feature": "pair2219_hor",
         "side": 2,
-        "threshold": 10.77190778672434,
+        "threshold": 25.25252525252526,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
@@ -162,111 +180,183 @@
       },
       {
         "feature": "minfreq_orig",
-        "side": 1,
-        "threshold": 0.02066115702479339,
+        "side": 2,
+        "threshold": 0.005555555555555556,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_hor",
-        "side": 2,
-        "threshold": 0.02351557907113463,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 3.005725824664886,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": -0.03146034384012415,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "mean(3)_hor",
+        "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 1.869565217391304,
+        "threshold": 0.003068520052778545,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_hor",
-        "side": 1,
-        "threshold": 0.01624431448992852,
+        "feature": "x3_orig",
+        "side": 2,
+        "threshold": 9801.0,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
-        "side": 2,
-        "threshold": 0.01374287088572803,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 7.045031843543931,
         "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
-      },
-      {
-        "feature": "maxfreq_vert",
-        "side": 2,
-        "threshold": 0.00801924619085806,
-        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "Q3(2)_hor",
-        "side": 2,
-        "threshold": 160.0,
-        "leaf_number": 9,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.0273224043715847,
+        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "x2_hor",
-        "side": 2,
-        "threshold": 29.68702827815236,
-        "leaf_number": 10,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 19.0,
+        "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "P5_hor",
+        "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 10.0,
+        "threshold": 0.01822423093745444,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P95(3)_hor",
+        "side": 1,
+        "threshold": 28.0,
         "leaf_number": 11,
         "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 1.248595330253465,
+        "leaf_number": 12,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "range(3)_hor",
-        "side": 2,
-        "threshold": 104.0,
-        "leaf_number": 12,
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 18225.0,
+        "leaf_number": 13,
         "level_number": 5,
         "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 22.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 2.988008323822,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04578754578754578,
+        "leaf_number": 16,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01656360424028269,
+        "leaf_number": 17,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.0132520540683806,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 13,
         "previous_direction": 2
       },
       {
         "feature": "balx2_orig",
         "side": 1,
-        "threshold": 1.374705420267086,
-        "leaf_number": 13,
-        "level_number": 5,
-        "previous_leaf": 11,
+        "threshold": 0.421067828011838,
+        "leaf_number": 19,
+        "level_number": 7,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01418037436188315,
+        "leaf_number": 20,
+        "level_number": 7,
+        "previous_leaf": 18,
         "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.613573789746974,
+        "leaf_number": 21,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 2
       }
     ]
   },
@@ -274,112 +364,175 @@
     "id": 3,
     "tree": [
       {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
+        "feature": "P95(1)_vert",
+        "side": 1,
+        "threshold": 1433.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "fractal_dim",
+        "feature": "x3_orig",
         "side": 2,
-        "threshold": 1.347147323167857,
+        "threshold": 9801.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "Q1(1)_vert",
+        "feature": "P95_hor",
         "side": 2,
-        "threshold": 15.0,
+        "threshold": 29.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "x1_hor",
+        "feature": "Q1_hor",
         "side": 2,
-        "threshold": 361.0,
+        "threshold": 13.0,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "x3_vert",
-        "side": 2,
-        "threshold": 7225.0,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04955892556249381,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.719824991818675,
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01282051282051282,
         "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 46.0,
+        "leaf_number": 7,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "x3_orig",
         "side": 1,
-        "threshold": 1.427391414325164,
-        "leaf_number": 7,
+        "threshold": 11025.0,
+        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "pair2219_hor",
-        "side": 2,
-        "threshold": 39.06742281033397,
-        "leaf_number": 8,
+        "feature": "P95(3)_hor",
+        "side": 1,
+        "threshold": 28.0,
+        "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "pair2420_hor",
+        "feature": "x3_orig",
         "side": 2,
-        "threshold": 34.21682941594504,
-        "leaf_number": 9,
-        "level_number": 5,
+        "threshold": 42849.0,
+        "leaf_number": 10,
+        "level_number": 4,
         "previous_leaf": 6,
-        "previous_direction": 1
+        "previous_direction": 2
       },
       {
-        "feature": "pair6153_vert",
-        "side": 2,
-        "threshold": 1.108074167097584,
-        "leaf_number": 10,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": -0.03146034384012415,
+        "leaf_number": 11,
         "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.707735007618605,
-        "leaf_number": 11,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 5.427500466425821,
+        "leaf_number": 12,
         "level_number": 6,
-        "previous_leaf": 9,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 2,
+        "threshold": 0.01233654083395016,
+        "leaf_number": 13,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std_hor",
+        "side": 1,
+        "threshold": 4.563849208515583,
+        "leaf_number": 14,
+        "level_number": 7,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "dif13_hor",
+        "side": 1,
+        "threshold": 9.451970443349753,
+        "leaf_number": 15,
+        "level_number": 7,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "pair2219_hor",
+        "side": 2,
+        "threshold": 42.35371520210535,
+        "leaf_number": 16,
+        "level_number": 7,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.71712924025792,
+        "leaf_number": 17,
+        "level_number": 7,
+        "previous_leaf": 13,
         "previous_direction": 2
       },
       {
         "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.04674262342974,
-        "leaf_number": 12,
-        "level_number": 7,
-        "previous_leaf": 11,
-        "previous_direction": 2
+        "threshold": 0.00413907284768212,
+        "leaf_number": 18,
+        "level_number": 8,
+        "previous_leaf": 17,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.08506113769271664,
+        "leaf_number": 19,
+        "level_number": 9,
+        "previous_leaf": 18,
+        "previous_direction": 1
       }
     ]
   },
@@ -387,103 +540,184 @@
     "id": 4,
     "tree": [
       {
-        "feature": "pair7878_vert",
-        "side": 2,
-        "threshold": 0.701311452416018,
+        "feature": "P95(1)_hor",
+        "side": 1,
+        "threshold": 3634.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "P95(1)_hor",
         "side": 2,
-        "threshold": 0.005238619100005238,
+        "threshold": 639.5,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_orig",
-        "side": 1,
-        "threshold": 0.02042900919305414,
+        "feature": "Q1_hor",
+        "side": 2,
+        "threshold": 20.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.0273224043715847,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "Q1(1)_vert",
-        "side": 2,
-        "threshold": 6.0,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01801801801801802,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 1.364451671055952,
+        "threshold": 0.01282051282051282,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "skew_hor",
         "side": 1,
-        "threshold": 0.01452011035283868,
+        "threshold": 0.06124063880587198,
         "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.03745318352059925,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 4,
         "previous_direction": 2
       },
       {
         "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.003668378576669112,
-        "leaf_number": 8,
+        "threshold": 0.0170940170940171,
+        "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
         "feature": "x3_orig",
-        "side": 1,
-        "threshold": 12544.0,
-        "leaf_number": 9,
-        "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "Q1(2)_hor",
-        "side": 1,
-        "threshold": 1.0,
+        "side": 2,
+        "threshold": 42849.0,
         "leaf_number": 10,
         "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 2,
+        "threshold": 0.005033725963958522,
+        "leaf_number": 11,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.011685655857435,
-        "leaf_number": 11,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": -0.03146034384012415,
+        "leaf_number": 12,
         "level_number": 5,
-        "previous_leaf": 10,
+        "previous_leaf": 8,
         "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01223091976516634,
+        "leaf_number": 13,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 18225.0,
+        "leaf_number": 14,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 26.0,
+        "leaf_number": 15,
+        "level_number": 7,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01124606387764283,
+        "leaf_number": 16,
+        "level_number": 7,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std_hor",
+        "side": 1,
+        "threshold": 4.509317080390052,
+        "leaf_number": 17,
+        "level_number": 7,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.006841817186644773,
+        "leaf_number": 18,
+        "level_number": 8,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 4.998019077804527,
+        "leaf_number": 19,
+        "level_number": 8,
+        "previous_leaf": 16,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x1_vert",
+        "side": 2,
+        "threshold": 3025.0,
+        "leaf_number": 20,
+        "level_number": 9,
+        "previous_leaf": 18,
+        "previous_direction": 2
       }
     ]
   },
@@ -491,139 +725,184 @@
     "id": 5,
     "tree": [
       {
-        "feature": "x1_orig",
+        "feature": "P95(3)_hor",
         "side": 1,
-        "threshold": 3721.0,
+        "threshold": 161.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "x3_orig",
-        "side": 2,
-        "threshold": 17689.0,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": 0.06124063880587198,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_vert",
-        "side": 2,
-        "threshold": 0.03217503217503218,
-        "leaf_number": 3,
-        "level_number": 2,
-        "previous_leaf": 1,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
+        "feature": "balx2_orig",
         "side": 1,
-        "threshold": 1.719824991818675,
-        "leaf_number": 4,
+        "threshold": 1.627008338417734,
+        "leaf_number": 3,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "x1_orig",
+        "feature": "std_hor",
         "side": 2,
-        "threshold": 1560.0,
-        "leaf_number": 5,
-        "level_number": 3,
-        "previous_leaf": 2,
-        "previous_direction": 2
-      },
-      {
-        "feature": "minfreq_orig",
-        "side": 1,
-        "threshold": 0.03188775510204082,
-        "leaf_number": 6,
-        "level_number": 3,
+        "threshold": 3.553369372899768,
+        "leaf_number": 4,
+        "level_number": 4,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01801801801801802,
+        "leaf_number": 5,
+        "level_number": 4,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
         "feature": "minfreq_hor",
         "side": 1,
-        "threshold": 0.004009783872649264,
-        "leaf_number": 7,
-        "level_number": 4,
-        "previous_leaf": 4,
-        "previous_direction": 1
-      },
-      {
-        "feature": "x2_orig",
-        "side": 2,
-        "threshold": 0.7472760091113323,
-        "leaf_number": 8,
-        "level_number": 4,
-        "previous_leaf": 4,
-        "previous_direction": 2
-      },
-      {
-        "feature": "maxfreq_vert",
-        "side": 1,
-        "threshold": 0.0163826998689384,
-        "leaf_number": 9,
-        "level_number": 4,
-        "previous_leaf": 5,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.391255474949743,
-        "leaf_number": 10,
-        "level_number": 4,
-        "previous_leaf": 5,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.248906895534836,
-        "leaf_number": 11,
+        "threshold": 0.003128128128128128,
+        "leaf_number": 6,
         "level_number": 5,
-        "previous_leaf": 7,
+        "previous_leaf": 4,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q1(2)_hor",
+        "side": 1,
+        "threshold": 0.5,
+        "leaf_number": 7,
+        "level_number": 5,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.005555555555555556,
+        "leaf_number": 8,
+        "level_number": 5,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04578754578754578,
+        "leaf_number": 9,
+        "level_number": 5,
+        "previous_leaf": 5,
         "previous_direction": 2
       },
       {
         "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 0.7947087776866285,
+        "leaf_number": 10,
+        "level_number": 6,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01157943492357573,
+        "leaf_number": 11,
+        "level_number": 6,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt(3)_vert",
         "side": 1,
-        "threshold": 0.9833486298675755,
+        "threshold": 1.308399481732162,
         "leaf_number": 12,
-        "level_number": 5,
+        "level_number": 6,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 2,
+        "threshold": 0.01709986320109439,
+        "leaf_number": 13,
+        "level_number": 6,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.08836524300441827,
+        "leaf_number": 14,
+        "level_number": 7,
         "previous_leaf": 10,
         "previous_direction": 1
       },
       {
-        "feature": "balx2_orig",
+        "feature": "range_hor",
         "side": 1,
-        "threshold": 1.549346692144812,
-        "leaf_number": 13,
-        "level_number": 6,
+        "threshold": 35.0,
+        "leaf_number": 15,
+        "level_number": 7,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "kurt(2)_vert",
+        "side": 1,
+        "threshold": 1.637947193075272,
+        "leaf_number": 16,
+        "level_number": 7,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.009902951079421667,
+        "leaf_number": 17,
+        "level_number": 7,
         "previous_leaf": 11,
         "previous_direction": 2
       },
       {
-        "feature": "mean_hor",
+        "feature": "balx2_orig",
         "side": 2,
-        "threshold": 20.05601728723404,
-        "leaf_number": 14,
-        "level_number": 6,
+        "threshold": 2.988008323822,
+        "leaf_number": 18,
+        "level_number": 7,
         "previous_leaf": 12,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
-        "side": 2,
-        "threshold": 0.007008690776562938,
-        "leaf_number": 15,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 5.512386969565264,
+        "leaf_number": 19,
         "level_number": 7,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "std_hor",
+        "side": 1,
+        "threshold": 4.563849208515583,
+        "leaf_number": 20,
+        "level_number": 8,
         "previous_leaf": 14,
-        "previous_direction": 2
+        "previous_direction": 1
       }
     ]
   },
@@ -631,111 +910,147 @@
     "id": 6,
     "tree": [
       {
-        "feature": "IQR_vert",
+        "feature": "x2_vert",
         "side": 2,
-        "threshold": 14.0,
+        "threshold": 0.8574123295892996,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "balx2_orig",
-        "side": 1,
-        "threshold": 7.045031843543931,
+        "feature": "Q3(1)_hor",
+        "side": 2,
+        "threshold": 313.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
-        "side": 1,
-        "threshold": 0.01539408866995074,
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 22.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "x1_hor",
-        "side": 1,
-        "threshold": 576.0,
+        "feature": "std_hor",
+        "side": 2,
+        "threshold": 4.038238644969192,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "x2_orig",
-        "side": 2,
-        "threshold": 3.143665513989311,
-        "leaf_number": 5,
-        "level_number": 3,
-        "previous_leaf": 2,
-        "previous_direction": 2
-      },
-      {
-        "feature": "fractal_dim",
+        "feature": "x3_orig",
         "side": 1,
-        "threshold": 1.551659828174034,
-        "leaf_number": 6,
+        "threshold": 11881.0,
+        "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "pair5649_vert",
-        "side": 2,
-        "threshold": 4.028467839398416,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 10.0,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 2
+      },
+      {
+        "feature": "std_hor",
+        "side": 1,
+        "threshold": 5.047408422712309,
         "leaf_number": 7,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "dif23_hor",
+        "feature": "x3_orig",
         "side": 2,
-        "threshold": 1.288375174850916,
+        "threshold": 54289.0,
         "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.364451671055952,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04955892556249381,
         "leaf_number": 9,
         "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.63436487365301,
-        "leaf_number": 10,
-        "level_number": 5,
-        "previous_leaf": 7,
-        "previous_direction": 2
-      },
-      {
-        "feature": "balx2_orig",
-        "side": 1,
-        "threshold": 0.7757607996985616,
-        "leaf_number": 11,
-        "level_number": 5,
-        "previous_leaf": 9,
+        "previous_leaf": 5,
         "previous_direction": 1
       },
       {
         "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.04674262342974,
+        "threshold": 0.01656360424028269,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew_hor",
+        "side": 2,
+        "threshold": -0.0008095978508333808,
+        "leaf_number": 11,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 9.856100926473486,
         "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": 0.06124063880587198,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q1_hor",
+        "side": 2,
+        "threshold": 17.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.005555555555555556,
+        "leaf_number": 15,
         "level_number": 6,
-        "previous_leaf": 11,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P5_vert",
+        "side": 1,
+        "threshold": 44.0,
+        "leaf_number": 16,
+        "level_number": 7,
+        "previous_leaf": 15,
         "previous_direction": 2
       }
     ]
@@ -744,82 +1059,64 @@
     "id": 7,
     "tree": [
       {
-        "feature": "pair2219_hor",
+        "feature": "std_hor",
         "side": 2,
-        "threshold": 39.06742281033397,
+        "threshold": 3.553369372899768,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "maxfreq_orig",
+        "feature": "P95(1)_hor",
         "side": 2,
-        "threshold": 0.005238619100005238,
+        "threshold": 639.5,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_hor",
+        "feature": "Q1_hor",
         "side": 1,
-        "threshold": 0.0091324200913242,
+        "threshold": 10.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "skew(1)_hor",
-        "side": 2,
-        "threshold": 1.038565275124002,
+        "feature": "P95(1)_hor",
+        "side": 1,
+        "threshold": 1796.5,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "Q1(1)_vert",
-        "side": 2,
-        "threshold": 9.0,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01801801801801802,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.781970781629147,
-        "leaf_number": 6,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 1
-      },
-      {
-        "feature": "skew(3)_vert",
-        "side": 1,
-        "threshold": 1.917948125319016,
-        "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
-      },
-      {
-        "feature": "P5(1)_hor",
+        "feature": "std_hor",
         "side": 2,
-        "threshold": 0.5,
-        "leaf_number": 8,
+        "threshold": 4.721530265905347,
+        "leaf_number": 6,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "kurt_hor",
-        "side": 2,
-        "threshold": 0.3526949812255715,
-        "leaf_number": 9,
+        "feature": "P95_hor",
+        "side": 1,
+        "threshold": 30.0,
+        "leaf_number": 7,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
@@ -827,47 +1124,119 @@
       {
         "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.003668378576669112,
-        "leaf_number": 10,
+        "threshold": 0.0170940170940171,
+        "leaf_number": 8,
         "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.005555555555555556,
+        "leaf_number": 9,
+        "level_number": 5,
         "previous_leaf": 6,
         "previous_direction": 1
       },
       {
-        "feature": "pair5649_vert",
+        "feature": "P95_hor",
         "side": 2,
-        "threshold": 2.103934357248054,
+        "threshold": 27.0,
+        "leaf_number": 10,
+        "level_number": 5,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "Q3(1)_hor",
+        "side": 2,
+        "threshold": 1219.0,
         "leaf_number": 11,
-        "level_number": 4,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "Q1_hor",
         "side": 2,
-        "threshold": 1.707735007618605,
+        "threshold": 27.0,
         "leaf_number": 12,
         "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01000250062515629,
+        "leaf_number": 13,
+        "level_number": 6,
         "previous_leaf": 10,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_vert",
-        "side": 2,
-        "threshold": 0.00801924619085806,
-        "leaf_number": 13,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.04955892556249381,
+        "leaf_number": 14,
         "level_number": 6,
-        "previous_leaf": 12,
+        "previous_leaf": 10,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_hor",
+        "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.01461988304093567,
-        "leaf_number": 14,
-        "level_number": 7,
-        "previous_leaf": 13,
+        "threshold": 0.003068520052778545,
+        "leaf_number": 15,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 2,
+        "threshold": 0.01233654083395016,
+        "leaf_number": 16,
+        "level_number": 6,
+        "previous_leaf": 11,
         "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.03745318352059925,
+        "leaf_number": 17,
+        "level_number": 7,
+        "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 6.198326518274435,
+        "leaf_number": 18,
+        "level_number": 7,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.0273224043715847,
+        "leaf_number": 19,
+        "level_number": 8,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": 0.06124063880587198,
+        "leaf_number": 20,
+        "level_number": 9,
+        "previous_leaf": 19,
+        "previous_direction": 1
       }
     ]
   },
@@ -875,120 +1244,201 @@
     "id": 8,
     "tree": [
       {
-        "feature": "mean_vert",
+        "feature": "P95_hor",
         "side": 2,
-        "threshold": 45.86232638888889,
+        "threshold": 22.0,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "x3_orig",
-        "side": 2,
-        "threshold": 40000.0,
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 43.0,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "x1_hor",
-        "side": 2,
-        "threshold": 256.0,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 10.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "balx2_orig",
-        "side": 2,
-        "threshold": 5.850958094387956,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": -0.03146034384012415,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "x1_orig",
-        "side": 1,
-        "threshold": 1089.0,
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.005555555555555556,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
+        "feature": "skew_hor",
         "side": 2,
-        "threshold": 1.364451671055952,
+        "threshold": -0.0008095978508333808,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_hor",
-        "side": 2,
-        "threshold": 0.02803476310625175,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 7.654836464857342,
         "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 1
       },
       {
-        "feature": "P5_hor",
-        "side": 2,
-        "threshold": 22.0,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.0273224043715847,
         "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "dif12_vert",
+        "feature": "minfreq_hor",
         "side": 1,
-        "threshold": 4.207505518763798,
+        "threshold": 0.005793407102717108,
         "leaf_number": 9,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "fractal_dim",
+        "feature": "kurt(2)_vert",
         "side": 1,
-        "threshold": 1.224463691873885,
+        "threshold": 0.9640526499221225,
         "leaf_number": 10,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 2
       },
       {
-        "feature": "skew(2)_vert",
-        "side": 1,
-        "threshold": 1.50801287225316,
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01157943492357573,
         "leaf_number": 11,
-        "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "maxfreq_hor",
-        "side": 1,
-        "threshold": 0.01624431448992852,
-        "leaf_number": 12,
-        "level_number": 4,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 2.152094006513417,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_vert",
+        "side": 1,
+        "threshold": 103.0,
         "leaf_number": 13,
         "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 2.988008323822,
+        "leaf_number": 14,
+        "level_number": 5,
         "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.08684324793747286,
+        "leaf_number": 15,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 2,
+        "threshold": 0.006165988407941794,
+        "leaf_number": 16,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01822423093745444,
+        "leaf_number": 17,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01223091976516634,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_hor",
+        "side": 1,
+        "threshold": 0.04179728317659352,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.004101554489151388,
+        "leaf_number": 20,
+        "level_number": 7,
+        "previous_leaf": 17,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01418037436188315,
+        "leaf_number": 21,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.008514261387824606,
+        "leaf_number": 22,
+        "level_number": 8,
+        "previous_leaf": 20,
         "previous_direction": 1
       }
     ]
@@ -997,138 +1447,210 @@
     "id": 9,
     "tree": [
       {
-        "feature": "dif13_vert",
+        "feature": "dif13_hor",
         "side": 1,
-        "threshold": 3.99290780141844,
+        "threshold": 12.26082991336069,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.628963121328352,
+        "feature": "skew_hor",
+        "side": 1,
+        "threshold": -0.03146034384012415,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "x1_hor",
-        "side": 2,
-        "threshold": 256.0,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 10.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.244407613686514,
+        "feature": "skew_hor",
+        "side": 2,
+        "threshold": -0.08641167308730234,
         "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q1_hor",
+        "side": 2,
+        "threshold": 15.0,
+        "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
         "feature": "x3_orig",
-        "side": 1,
-        "threshold": 22201.0,
-        "leaf_number": 5,
-        "level_number": 3,
-        "previous_leaf": 3,
+        "side": 2,
+        "threshold": 21609.0,
+        "leaf_number": 6,
+        "level_number": 4,
+        "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_hor",
+        "feature": "x3_orig",
         "side": 2,
-        "threshold": 0.02803476310625175,
-        "leaf_number": 6,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
-      },
-      {
-        "feature": "P5(1)_hor",
-        "side": 2,
-        "threshold": 0.5,
+        "threshold": 17689.0,
         "leaf_number": 7,
         "level_number": 4,
         "previous_leaf": 4,
-        "previous_direction": 1
-      },
-      {
-        "feature": "dif13_vert",
-        "side": 2,
-        "threshold": 3.720930232558139,
-        "leaf_number": 8,
-        "level_number": 4,
-        "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.003644846187490888,
-        "leaf_number": 9,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 18.0,
+        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 5,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
-        "side": 1,
-        "threshold": 0.01624431448992852,
-        "leaf_number": 10,
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01822423093745444,
+        "leaf_number": 9,
         "level_number": 4,
-        "previous_leaf": 6,
-        "previous_direction": 1
-      },
-      {
-        "feature": "skew(3)_hor",
-        "side": 2,
-        "threshold": 2.064602603226634,
-        "leaf_number": 11,
-        "level_number": 5,
-        "previous_leaf": 8,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 2,
-        "threshold": 1.364451671055952,
-        "leaf_number": 12,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 1
-      },
-      {
-        "feature": "fractal_dim",
-        "side": 1,
-        "threshold": 1.551659828174034,
-        "leaf_number": 13,
-        "level_number": 6,
-        "previous_leaf": 12,
-        "previous_direction": 1
-      },
-      {
-        "feature": "skew(1)_vert",
-        "side": 2,
-        "threshold": 0.9536502321531459,
-        "leaf_number": 14,
-        "level_number": 6,
-        "previous_leaf": 12,
+        "previous_leaf": 5,
         "previous_direction": 2
       },
       {
         "feature": "minfreq_orig",
         "side": 1,
-        "threshold": 0.08836524300441827,
+        "threshold": 0.04578754578754578,
+        "leaf_number": 10,
+        "level_number": 5,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.03745318352059925,
+        "leaf_number": 11,
+        "level_number": 5,
+        "previous_leaf": 6,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 0.8764754002570996,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.009041591320072333,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01000250062515629,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 8,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.02904022070567736,
         "leaf_number": 15,
-        "level_number": 7,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.05543237250554324,
+        "leaf_number": 16,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "pair2219_hor",
+        "side": 2,
+        "threshold": 68.43053054439673,
+        "leaf_number": 17,
+        "level_number": 6,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 21025.0,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01223091976516634,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.688344172086043,
+        "leaf_number": 20,
+        "level_number": 6,
         "previous_leaf": 14,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt(2)_vert",
+        "side": 1,
+        "threshold": 0.9640526499221225,
+        "leaf_number": 21,
+        "level_number": 6,
+        "previous_leaf": 14,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 27.0,
+        "leaf_number": 22,
+        "level_number": 7,
+        "previous_leaf": 19,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 2.988008323822,
+        "leaf_number": 23,
+        "level_number": 7,
+        "previous_leaf": 21,
         "previous_direction": 1
       }
     ]
@@ -1137,139 +1659,405 @@
     "id": 10,
     "tree": [
       {
-        "feature": "pair7265_vert",
+        "feature": "minfreq_hor",
         "side": 2,
-        "threshold": 1.112966054535337,
+        "threshold": 0.01167133520074697,
         "leaf_number": 1,
         "level_number": 1,
         "previous_leaf": 0,
         "previous_direction": 0
       },
       {
-        "feature": "minfreq_orig",
+        "feature": "Q3(1)_hor",
         "side": 2,
-        "threshold": 0.004256224728665674,
+        "threshold": 329.5,
         "leaf_number": 2,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 1
       },
       {
-        "feature": "x1_hor",
+        "feature": "Q1_hor",
         "side": 2,
-        "threshold": 256.0,
+        "threshold": 13.0,
         "leaf_number": 3,
         "level_number": 2,
         "previous_leaf": 1,
         "previous_direction": 2
       },
       {
-        "feature": "x2_orig",
-        "side": 1,
-        "threshold": 0.798148295953388,
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 22.0,
         "leaf_number": 4,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 1
       },
       {
-        "feature": "Q1(2)_vert",
-        "side": 2,
-        "threshold": 1.0,
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.01801801801801802,
         "leaf_number": 5,
         "level_number": 3,
         "previous_leaf": 2,
         "previous_direction": 2
       },
       {
-        "feature": "x2_orig",
-        "side": 2,
-        "threshold": 2.198177954717534,
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 18225.0,
         "leaf_number": 6,
         "level_number": 3,
         "previous_leaf": 3,
         "previous_direction": 1
       },
       {
-        "feature": "minfreq_hor",
-        "side": 2,
-        "threshold": 0.02803476310625175,
-        "leaf_number": 7,
-        "level_number": 3,
-        "previous_leaf": 3,
-        "previous_direction": 2
-      },
-      {
-        "feature": "x1_orig",
+        "feature": "minfreq_orig",
         "side": 1,
-        "threshold": 1089.0,
-        "leaf_number": 8,
+        "threshold": 0.0273224043715847,
+        "leaf_number": 7,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 1
       },
       {
-        "feature": "pair2219_hor",
-        "side": 2,
-        "threshold": 39.06742281033397,
-        "leaf_number": 9,
+        "feature": "Q1_hor",
+        "side": 1,
+        "threshold": 10.0,
+        "leaf_number": 8,
         "level_number": 4,
         "previous_leaf": 4,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_hor",
+        "feature": "skew_hor",
         "side": 1,
-        "threshold": 0.01539408866995074,
+        "threshold": 0.005236288336653145,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 35.0,
         "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "std_hor",
+        "side": 2,
+        "threshold": 4.379799230228881,
+        "leaf_number": 11,
         "level_number": 4,
         "previous_leaf": 6,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_hor",
+        "feature": "balx2_orig",
         "side": 1,
-        "threshold": 0.01624431448992852,
-        "leaf_number": 11,
-        "level_number": 4,
+        "threshold": 7.228887173623345,
+        "leaf_number": 12,
+        "level_number": 5,
         "previous_leaf": 7,
         "previous_direction": 1
       },
       {
-        "feature": "pair2316_hor",
-        "side": 2,
-        "threshold": 15.01541055293591,
-        "leaf_number": 12,
+        "feature": "std_hor",
+        "side": 1,
+        "threshold": 4.008696662897831,
+        "leaf_number": 13,
         "level_number": 5,
-        "previous_leaf": 8,
+        "previous_leaf": 7,
         "previous_direction": 2
       },
       {
-        "feature": "maxfreq_orig",
-        "side": 2,
-        "threshold": 0.0132520540683806,
-        "leaf_number": 13,
-        "level_number": 5,
-        "previous_leaf": 9,
-        "previous_direction": 1
-      },
-      {
-        "feature": "median(2)_hor",
+        "feature": "dif13_hor",
         "side": 1,
-        "threshold": 8.5,
+        "threshold": 11.94272976680384,
         "leaf_number": 14,
         "level_number": 5,
         "previous_leaf": 10,
         "previous_direction": 1
       },
       {
-        "feature": "maxfreq_hor",
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.223453370267775,
+        "leaf_number": 15,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
         "side": 2,
-        "threshold": 0.01461988304093567,
+        "threshold": 0.01000250062515629,
+        "leaf_number": 16,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x3_orig",
+        "side": 2,
+        "threshold": 54289.0,
+        "leaf_number": 17,
+        "level_number": 5,
+        "previous_leaf": 11,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01282051282051282,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 15,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.688344172086043,
+        "leaf_number": 19,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 1
+      },
+      {
+        "feature": "kurt(2)_vert",
+        "side": 1,
+        "threshold": 1.322014652864413,
+        "leaf_number": 20,
+        "level_number": 6,
+        "previous_leaf": 16,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.08506113769271664,
+        "leaf_number": 21,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.009041591320072333,
+        "leaf_number": 22,
+        "level_number": 7,
+        "previous_leaf": 20,
+        "previous_direction": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "tree": [
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 1.490535102101654,
+        "leaf_number": 1,
+        "level_number": 1,
+        "previous_leaf": 0,
+        "previous_direction": 0
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 2,
+        "threshold": 0.7947087776866285,
+        "leaf_number": 2,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q3(1)_hor",
+        "side": 1,
+        "threshold": 1122.0,
+        "leaf_number": 3,
+        "level_number": 2,
+        "previous_leaf": 1,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 0.9833486298675755,
+        "leaf_number": 4,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 0.2388340489168876,
+        "leaf_number": 5,
+        "level_number": 3,
+        "previous_leaf": 2,
+        "previous_direction": 2
+      },
+      {
+        "feature": "x3_orig",
+        "side": 2,
+        "threshold": 10609.0,
+        "leaf_number": 6,
+        "level_number": 3,
+        "previous_leaf": 3,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q1_hor",
+        "side": 2,
+        "threshold": 13.0,
+        "leaf_number": 7,
+        "level_number": 4,
+        "previous_leaf": 4,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P95(3)_hor",
+        "side": 1,
+        "threshold": 41.5,
+        "leaf_number": 8,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01282051282051282,
+        "leaf_number": 9,
+        "level_number": 4,
+        "previous_leaf": 5,
+        "previous_direction": 2
+      },
+      {
+        "feature": "range_hor",
+        "side": 1,
+        "threshold": 46.0,
+        "leaf_number": 10,
+        "level_number": 4,
+        "previous_leaf": 6,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.08836524300441827,
+        "leaf_number": 11,
+        "level_number": 5,
+        "previous_leaf": 7,
+        "previous_direction": 1
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 1,
+        "threshold": 0.03004807692307692,
+        "leaf_number": 12,
+        "level_number": 5,
+        "previous_leaf": 9,
+        "previous_direction": 1
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 12321.0,
+        "leaf_number": 13,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 1
+      },
+      {
+        "feature": "Q3(1)_hor",
+        "side": 2,
+        "threshold": 1119.0,
+        "leaf_number": 14,
+        "level_number": 5,
+        "previous_leaf": 10,
+        "previous_direction": 2
+      },
+      {
+        "feature": "minfreq_orig",
+        "side": 2,
+        "threshold": 0.01000250062515629,
         "leaf_number": 15,
         "level_number": 6,
-        "previous_leaf": 14,
+        "previous_leaf": 11,
+        "previous_direction": 1
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 0.7757607996985616,
+        "leaf_number": 16,
+        "level_number": 6,
+        "previous_leaf": 12,
+        "previous_direction": 1
+      },
+      {
+        "feature": "range_hor",
+        "side": 2,
+        "threshold": 32.0,
+        "leaf_number": 17,
+        "level_number": 6,
+        "previous_leaf": 13,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P95(1)_hor",
+        "side": 2,
+        "threshold": 639.5,
+        "leaf_number": 18,
+        "level_number": 6,
+        "previous_leaf": 13,
         "previous_direction": 2
+      },
+      {
+        "feature": "x3_orig",
+        "side": 1,
+        "threshold": 13225.0,
+        "leaf_number": 19,
+        "level_number": 7,
+        "previous_leaf": 15,
+        "previous_direction": 2
+      },
+      {
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 27.0,
+        "leaf_number": 20,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 1
+      },
+      {
+        "feature": "P95_hor",
+        "side": 2,
+        "threshold": 30.0,
+        "leaf_number": 21,
+        "level_number": 7,
+        "previous_leaf": 18,
+        "previous_direction": 2
+      },
+      {
+        "feature": "balx2_orig",
+        "side": 1,
+        "threshold": 9.633643325658879,
+        "leaf_number": 22,
+        "level_number": 8,
+        "previous_leaf": 20,
+        "previous_direction": 1
       }
     ]
   }
