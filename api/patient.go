@@ -120,6 +120,22 @@ func DeletePatient(response http.ResponseWriter, request *http.Request) {
 	params := mux.Vars(request)
 	id := params["id"]
 
+	sqlStatementAnalizes := `
+	DELETE FROM analizes
+	WHERE patientID = $1;`
+	_, err = db.Exec(sqlStatementAnalizes, id)
+	if err != nil {
+		panic(err)
+	}
+
+	sqlStatementImages := `
+	DELETE FROM images
+	WHERE patientID = $1;`
+	_, err = db.Exec(sqlStatementImages, id)
+	if err != nil {
+		panic(err)
+	}
+
 	sqlStatement := `
 	DELETE FROM patients
 	WHERE patientID = $1;`

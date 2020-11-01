@@ -34,7 +34,7 @@ func StartServer() {
 	router.HandleFunc("/analizes", api.GetAnalizes).Methods("GET")
 	router.HandleFunc("/images", api.GetImages).Methods("GET")
 	router.HandleFunc("/patient/{id}", api.UpdatePatient).Methods("POST")
-	router.HandleFunc("/patient/{id}", api.DeletePatient).Methods("DELETE")
+	router.HandleFunc("/patient/delete/{id}", api.DeletePatient).Methods("GET")
 
 	http.ListenAndServe(":4200", router)
 }
